@@ -1,0 +1,241 @@
+ssh://root@mp-weizenbaum.iais.fraunhofer.de:22022/opt/conda/envs/dibert/bin/python -u /cluster/pytorchic-bert/Downstreamtask/imdb/train_imdb.py
+--loading csv file--
+results/params/dibert_imdb_mlm_cls_29_best.json
+selecting grid search sampler
+[I 2021-01-10 21:59:18,283] A new study created in memory with name: no-name-c557a98a-bdde-4444-b65a-add12ddfbd59
+selecting for trial
+
+Train_Epoch: 0
+100%|█████████████████████████████████████████| 196/196 [05:55<00:00,  1.81s/it]
+train_weighted_f1 0.6983109444891391
+train_acc 0.69832
+
+Valid_Epoch: 0
+100%|███████████████████████████████████████████| 98/98 [01:23<00:00,  1.17it/s]
+valid_weighted_f1: 0.8103293979157973
+valid_acc: 0.8112
+              precision    recall  f1-score   support
+
+           0       0.78      0.88      0.82      6269
+           1       0.86      0.74      0.80      6231
+
+    accuracy                           0.81     12500
+   macro avg       0.82      0.81      0.81     12500
+weighted avg       0.82      0.81      0.81     12500
+
+
+Train_Epoch: 1
+100%|█████████████████████████████████████████| 196/196 [05:53<00:00,  1.81s/it]
+train_weighted_f1 0.8411118567777662
+train_acc 0.84112
+
+Valid_Epoch: 1
+100%|███████████████████████████████████████████| 98/98 [01:23<00:00,  1.18it/s]
+valid_weighted_f1: 0.8215613763974406
+valid_acc: 0.8236
+              precision    recall  f1-score   support
+
+           0       0.77      0.93      0.84      6269
+           1       0.91      0.72      0.80      6231
+
+    accuracy                           0.82     12500
+   macro avg       0.84      0.82      0.82     12500
+weighted avg       0.84      0.82      0.82     12500
+
+
+Train_Epoch: 2
+100%|█████████████████████████████████████████| 196/196 [05:55<00:00,  1.81s/it]
+train_weighted_f1 0.8813589901269874
+train_acc 0.88136
+
+Valid_Epoch: 2
+100%|███████████████████████████████████████████| 98/98 [01:23<00:00,  1.17it/s]
+valid_weighted_f1: 0.8632561989440568
+valid_acc: 0.86328
+              precision    recall  f1-score   support
+
+           0       0.86      0.88      0.87      6269
+           1       0.87      0.85      0.86      6231
+
+    accuracy                           0.86     12500
+   macro avg       0.86      0.86      0.86     12500
+weighted avg       0.86      0.86      0.86     12500
+
+
+Train_Epoch: 3
+100%|█████████████████████████████████████████| 196/196 [05:54<00:00,  1.81s/it]
+train_weighted_f1 0.9024796567285367
+train_acc 0.90248
+
+Valid_Epoch: 3
+100%|███████████████████████████████████████████| 98/98 [01:23<00:00,  1.18it/s]
+valid_weighted_f1: 0.8556671251744105
+valid_acc: 0.85584
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86      6269
+           1       0.88      0.82      0.85      6231
+
+    accuracy                           0.86     12500
+   macro avg       0.86      0.86      0.86     12500
+weighted avg       0.86      0.86      0.86     12500
+
+[I 2021-01-10 22:28:35,158] Trial 0 finished with value: 0.85584 and parameters: {'lrmain': 2e-05, 'drop_out': 0.1}. Best is trial 0 with value: 0.85584.
+selecting for trial
+
+Train_Epoch: 0
+100%|█████████████████████████████████████████| 196/196 [05:53<00:00,  1.80s/it]
+train_weighted_f1 0.7420340601724421
+train_acc 0.74204
+
+Valid_Epoch: 0
+100%|███████████████████████████████████████████| 98/98 [01:23<00:00,  1.18it/s]
+valid_weighted_f1: 0.7571046078267967
+valid_acc: 0.76664
+              precision    recall  f1-score   support
+
+           0       0.69      0.96      0.81      6269
+           1       0.94      0.57      0.71      6231
+
+    accuracy                           0.77     12500
+   macro avg       0.82      0.77      0.76     12500
+weighted avg       0.82      0.77      0.76     12500
+
+
+Train_Epoch: 1
+100%|█████████████████████████████████████████| 196/196 [05:54<00:00,  1.81s/it]
+train_weighted_f1 0.855158288085376
+train_acc 0.85516
+
+Valid_Epoch: 1
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.18it/s]
+valid_weighted_f1: 0.8470267295676668
+valid_acc: 0.84768
+              precision    recall  f1-score   support
+
+           0       0.81      0.91      0.86      6269
+           1       0.90      0.78      0.84      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.85      0.85      0.85     12500
+weighted avg       0.85      0.85      0.85     12500
+
+
+Train_Epoch: 2
+100%|█████████████████████████████████████████| 196/196 [05:54<00:00,  1.81s/it]
+train_weighted_f1 0.8955195666985224
+train_acc 0.89552
+
+Valid_Epoch: 2
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.18it/s]
+valid_weighted_f1: 0.8570264619713182
+valid_acc: 0.85736
+              precision    recall  f1-score   support
+
+           0       0.83      0.90      0.86      6269
+           1       0.89      0.81      0.85      6231
+
+    accuracy                           0.86     12500
+   macro avg       0.86      0.86      0.86     12500
+weighted avg       0.86      0.86      0.86     12500
+
+
+Train_Epoch: 3
+100%|█████████████████████████████████████████| 196/196 [05:54<00:00,  1.81s/it]
+train_weighted_f1 0.9077591711613813
+train_acc 0.90776
+
+Valid_Epoch: 3
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.18it/s]
+valid_weighted_f1: 0.8624493648937209
+valid_acc: 0.86256
+              precision    recall  f1-score   support
+
+           0       0.84      0.89      0.87      6269
+           1       0.88      0.84      0.86      6231
+
+    accuracy                           0.86     12500
+   macro avg       0.86      0.86      0.86     12500
+weighted avg       0.86      0.86      0.86     12500
+
+[I 2021-01-10 22:57:45,967] Trial 1 finished with value: 0.86256 and parameters: {'lrmain': 3e-05, 'drop_out': 0.1}. Best is trial 1 with value: 0.86256.
+selecting for trial
+
+Train_Epoch: 0
+100%|█████████████████████████████████████████| 196/196 [05:53<00:00,  1.81s/it]
+train_weighted_f1 0.5999432071894651
+train_acc 0.59996
+
+Valid_Epoch: 0
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.19it/s]
+valid_weighted_f1: 0.8364139744583725
+valid_acc: 0.83664
+              precision    recall  f1-score   support
+
+           0       0.81      0.87      0.84      6269
+           1       0.86      0.80      0.83      6231
+
+    accuracy                           0.84     12500
+   macro avg       0.84      0.84      0.84     12500
+weighted avg       0.84      0.84      0.84     12500
+
+
+Train_Epoch: 1
+100%|█████████████████████████████████████████| 196/196 [05:51<00:00,  1.79s/it]
+train_weighted_f1 0.8619174725347483
+train_acc 0.86192
+
+Valid_Epoch: 1
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.19it/s]
+valid_weighted_f1: 0.867212728534656
+valid_acc: 0.86728
+              precision    recall  f1-score   support
+
+           0       0.89      0.84      0.86      6269
+           1       0.85      0.89      0.87      6231
+
+    accuracy                           0.87     12500
+   macro avg       0.87      0.87      0.87     12500
+weighted avg       0.87      0.87      0.87     12500
+
+
+Train_Epoch: 2
+100%|█████████████████████████████████████████| 196/196 [05:53<00:00,  1.80s/it]
+train_weighted_f1 0.9037593902191101
+train_acc 0.90376
+
+Valid_Epoch: 2
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.19it/s]
+valid_weighted_f1: 0.8612499813888708
+valid_acc: 0.86144
+              precision    recall  f1-score   support
+
+           0       0.89      0.82      0.86      6269
+           1       0.84      0.90      0.87      6231
+
+    accuracy                           0.86     12500
+   macro avg       0.86      0.86      0.86     12500
+weighted avg       0.86      0.86      0.86     12500
+
+
+Train_Epoch: 3
+100%|█████████████████████████████████████████| 196/196 [05:49<00:00,  1.78s/it]
+train_weighted_f1 0.9298391899506672
+train_acc 0.92984
+
+Valid_Epoch: 3
+100%|███████████████████████████████████████████| 98/98 [01:22<00:00,  1.19it/s]
+valid_weighted_f1: 0.8278974200754066
+valid_acc: 0.82992
+              precision    recall  f1-score   support
+
+           0       0.77      0.94      0.85      6269
+           1       0.92      0.72      0.81      6231
+
+    accuracy                           0.83     12500
+   macro avg       0.85      0.83      0.83     12500
+weighted avg       0.85      0.83      0.83     12500
+
+[I 2021-01-10 23:26:44,090] Trial 2 finished with value: 0.82992 and parameters: {'lrmain': 5e-05, 'drop_out': 0.1}. Best is trial 1 with value: 0.86256.
+
+Process finished with exit code 0

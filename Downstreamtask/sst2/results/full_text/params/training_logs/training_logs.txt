@@ -1,0 +1,42 @@
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_0_epoch_6.tar
+test_accuracy: 0.8193300384404174
+test_weighted_f1: 0.8193301474078153
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_0_epoch_11.tar
+test_accuracy: 0.828665568369028
+test_weighted_f1: 0.8286562674314327
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_1_epoch_9.tar
+test_accuracy: 0.8171334431630972
+test_weighted_f1: 0.8169109466678547
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_1_epoch_12.tar
+test_accuracy: 0.8253706754530478
+test_weighted_f1: 0.8250620793283917
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_2_epoch_6.tar
+test_accuracy: 0.8187808896210873
+test_weighted_f1: 0.8187533427422022
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_2_epoch_15.tar
+test_accuracy: 0.8253706754530478
+test_weighted_f1: 0.8250288878029133
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_3_epoch_13.tar
+test_accuracy: 0.8248215266337178
+test_weighted_f1: 0.8243586319355077
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_3_epoch_13.tar
+test_accuracy: 0.829214717188358
+test_weighted_f1: 0.8291173251524738
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_4_epoch_9.tar
+test_accuracy: 0.8248215266337178
+test_weighted_f1: 0.8246587801810419
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_4_epoch_15.tar
+test_accuracy: 0.8264689730917079
+test_weighted_f1: 0.8264470964421977
+
+normal bert avg test acc:
+(0.828665568369028+0.8171334431630972+0.8187808896210873+0.8248215266337178+0.8248215266337178)/5 = 0.82097748489
+
+dibert avg test acc:
+(0.828665568369028+0.8253706754530478+0.8253706754530478+0.829214717188358+0.8264689730917079)/5 = 0.82701812191
+
+

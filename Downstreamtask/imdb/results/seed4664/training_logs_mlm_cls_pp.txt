@@ -1,0 +1,166 @@
+ssh://root@mp-weizenbaum.iais.fraunhofer.de:22022/opt/conda/envs/dibert/bin/python -u /cluster/pytorchic-bert/Downstreamtask/imdb/train_imdb.py
+--loading csv file--
+{'lrmain': 5e-05, 'drop_out': 0.1}
+selecting best_params
+
+Train_Epoch: 0
+100%|█████████████████████████████████████████| 196/196 [05:57<00:00,  1.82s/it]
+train_weighted_f1 0.6827183735277661
+train_acc 0.6828
+
+Valid_Epoch: 0
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.15it/s]
+valid_weighted_f1: 0.8466220537014852
+valid_acc: 0.84688
+              precision    recall  f1-score   support
+
+           0       0.88      0.80      0.84      6269
+           1       0.82      0.89      0.85      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.85      0.85      0.85     12500
+weighted avg       0.85      0.85      0.85     12500
+
+-saving model-
+
+Train_Epoch: 1
+100%|█████████████████████████████████████████| 196/196 [05:58<00:00,  1.83s/it]
+train_weighted_f1 0.8710775059142929
+train_acc 0.87108
+
+Valid_Epoch: 1
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.16it/s]
+valid_weighted_f1: 0.8449572167454511
+valid_acc: 0.84624
+              precision    recall  f1-score   support
+
+           0       0.79      0.94      0.86      6269
+           1       0.92      0.76      0.83      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.86      0.85      0.84     12500
+weighted avg       0.86      0.85      0.84     12500
+
+-saving model-
+
+Train_Epoch: 2
+100%|█████████████████████████████████████████| 196/196 [05:55<00:00,  1.81s/it]
+train_weighted_f1 0.9046385059509374
+train_acc 0.90464
+
+Valid_Epoch: 2
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.16it/s]
+valid_weighted_f1: 0.8494119675702406
+valid_acc: 0.85024
+              precision    recall  f1-score   support
+
+           0       0.81      0.92      0.86      6269
+           1       0.91      0.78      0.84      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.86      0.85      0.85     12500
+weighted avg       0.86      0.85      0.85     12500
+
+-saving model-
+
+Train_Epoch: 3
+100%|█████████████████████████████████████████| 196/196 [05:54<00:00,  1.81s/it]
+train_weighted_f1 0.9345599924613102
+train_acc 0.93456
+
+Valid_Epoch: 3
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.16it/s]
+valid_weighted_f1: 0.8542300076931859
+valid_acc: 0.85456
+              precision    recall  f1-score   support
+
+           0       0.83      0.90      0.86      6269
+           1       0.89      0.81      0.85      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.86      0.85      0.85     12500
+weighted avg       0.86      0.85      0.85     12500
+
+-saving model-
+
+Train_Epoch: 4
+100%|█████████████████████████████████████████| 196/196 [05:53<00:00,  1.81s/it]
+train_weighted_f1 0.9412799984967679
+train_acc 0.94128
+
+Valid_Epoch: 4
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.16it/s]
+valid_weighted_f1: 0.852183001704145
+valid_acc: 0.85232
+              precision    recall  f1-score   support
+
+           0       0.83      0.88      0.86      6269
+           1       0.87      0.82      0.85      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.85      0.85      0.85     12500
+weighted avg       0.85      0.85      0.85     12500
+
+-saving model-
+
+Train_Epoch: 5
+100%|█████████████████████████████████████████| 196/196 [05:55<00:00,  1.81s/it]
+train_weighted_f1 0.9611992078438638
+train_acc 0.9612
+
+Valid_Epoch: 5
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.16it/s]
+valid_weighted_f1: 0.846965485684582
+valid_acc: 0.84736
+              precision    recall  f1-score   support
+
+           0       0.89      0.80      0.84      6269
+           1       0.81      0.90      0.85      6231
+
+    accuracy                           0.85     12500
+   macro avg       0.85      0.85      0.85     12500
+weighted avg       0.85      0.85      0.85     12500
+
+-saving model-
+
+Train_Epoch: 6
+100%|█████████████████████████████████████████| 196/196 [05:55<00:00,  1.81s/it]
+train_weighted_f1 0.9785599925903341
+train_acc 0.97856
+
+Valid_Epoch: 6
+100%|███████████████████████████████████████████| 98/98 [01:23<00:00,  1.17it/s]
+valid_weighted_f1: 0.8400717090081018
+valid_acc: 0.84072
+              precision    recall  f1-score   support
+
+           0       0.80      0.90      0.85      6269
+           1       0.89      0.78      0.83      6231
+
+    accuracy                           0.84     12500
+   macro avg       0.85      0.84      0.84     12500
+weighted avg       0.85      0.84      0.84     12500
+
+-saving model-
+
+Train_Epoch: 7
+100%|█████████████████████████████████████████| 196/196 [05:54<00:00,  1.81s/it]
+train_weighted_f1 0.974839999718208
+train_acc 0.97484
+
+Valid_Epoch: 7
+100%|███████████████████████████████████████████| 98/98 [01:24<00:00,  1.16it/s]
+valid_weighted_f1: 0.8435229596617524
+valid_acc: 0.8436
+              precision    recall  f1-score   support
+
+           0       0.83      0.86      0.85      6269
+           1       0.86      0.82      0.84      6231
+
+    accuracy                           0.84     12500
+   macro avg       0.84      0.84      0.84     12500
+weighted avg       0.84      0.84      0.84     12500
+
+-saving model-
+
+Process finished with exit code 0

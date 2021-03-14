@@ -1,0 +1,34 @@
+results/dibert_imdb_mlm_cls_29_seed_4114_epoch_3.tar
+test_accuracy: 0.86384
+test_weighted_f1: 0.8638394387953439
+results/dibert_imdb_mlm_cls_pp_29_seed_4114_epoch_3.tar
+test_accuracy: 0.8656
+test_weighted_f1: 0.8655098573536646
+
+results/dibert_imdb_mlm_cls_29_seed_391275_epoch_6.tar
+test_accuracy: 0.8552
+test_weighted_f1: 0.8551793836711246
+results/dibert_imdb_mlm_cls_pp_29_seed_391275_epoch_4.tar
+test_accuracy: 0.86224
+test_weighted_f1: 0.8618938095459694
+
+results/dibert_imdb_mlm_cls_29_seed_4664_epoch_6.tar
+test_accuracy: 0.84576
+test_weighted_f1: 0.8454610985721885
+results/dibert_imdb_mlm_cls_pp_29_seed_4664_epoch_4.tar
+test_accuracy: 0.85168
+test_weighted_f1: 0.8513733949084298
+
+results/dibert_imdb_mlm_cls_29_seed_0_epoch_3.tar
+test_accuracy: 0.86448
+test_weighted_f1: 0.8644359099470634
+results/dibert_imdb_mlm_cls_pp_29_seed_0_epoch_3.tar
+test_accuracy: 0.86744
+test_weighted_f1: 0.8674389267734625
+
+results/dibert_imdb_mlm_cls_29_seed_1_epoch_7.tar
+test_accuracy: 0.85384
+test_weighted_f1: 0.8536866325757719
+results/dibert_imdb_mlm_cls_pp_29_seed_1_epoch_3.tar
+test_accuracy: 0.86728
+test_weighted_f1: 0.8672794011588939

@@ -1,0 +1,40 @@
+Description:
+We are using two models, one is bert(path:../../results/model/wiki103_epoch31/dibert_mlm_cls_103_29.tar)
+with nsp and mlm task and another is bert(path:'../../results/model/wiki103_cls_mlm_pp_epochs30/dibert_mlm_cls_pp_103_29.tar')
+with nsp, mlm and pp (index of the parent in a sentence) task. Both berts are pretrained for 30 epochs
+(took almost a day) on wiki103 dataset which contains around 150k sentence pairs (pairs, because of nsp task)
+
+Then we did finetuning on both models for sst2(https://www.kaggle.com/jgggjkmf/binary-sst2-dataset?select=val.csv)
+data. Results shows that bert with additional objective is more meaningful than normal bert.
+
+We did not have enough time, resources and data to pretrain both model for longer but even smaller pretraining shows the
+impact of third additional objective.
+
+results/dibert_mlm_cls_29_seed_391275_epoch_4.tar
+test_accuracy: 0.7819879187259747
+test_weighted_f1: 0.7817704926553419
+results/dibert_mlm_cls_pp_29_seed_391275_epoch_3.tar
+test_accuracy: 0.800109829763866
+test_weighted_f1: 0.8000643672915089
+
+results/dibert_mlm_cls_29_seed_4114_epoch_4.tar
+test_accuracy: 0.7951674903898956
+test_weighted_f1: 0.7950099714793571
+results/dibert_mlm_cls_pp_29_seed_4114_epoch_6.tar
+test_accuracy: 0.8050521691378364
+test_weighted_f1: 0.8042510339676411
+
+results/dibert_mlm_cls_29_seed_4664_epoch_6.tar
+test_accuracy: 0.7913234486545854
+test_weighted_f1: 0.7912044393673512
+results/dibert_mlm_cls_pp_29_seed_4664_epoch_4.tar
+test_accuracy: 0.8034047226798462
+test_weighted_f1: 0.8031730095716145
+
+results/dibert_mlm_cls_29_seed_117_epoch_8.tar
+test_accuracy: 0.7819879187259747
+test_weighted_f1: 0.7802809577221632
+results/dibert_mlm_cls_pp_29_seed_117_epoch_3.tar
+test_accuracy: 0.8094453596924767
+test_weighted_f1: 0.8094365096362746
+

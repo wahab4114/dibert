@@ -1,0 +1,373 @@
+ssh://root@mp-weizenbaum.iais.fraunhofer.de:22022/opt/conda/envs/dibert/bin/python -u /cluster/pytorchic-bert/train.py
+2924692
+6216
+BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 2,
+  "num_hidden_layers": 2,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+
+Train_Epoch: 0
+100%|██████████████████████████████████| 91397/91397 [16:05:09<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.7398534459550842
+train_acc_cls 0.739897739659424
+train_loss_cls 0.48430071738692204
+
+
+train_weighted_f1_mlm 0.20378409873159173
+train_acc_mlm 0.2523275657599134
+train_loss_mlm 5.491347128185911
+
+
+train_weighted_f1_pp 0.5384028566148641
+train_acc_pp 0.5307174602612185
+train_loss_pp 3.5331437302161115
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 0
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.8560897510545795
+valid_acc_cls 0.8573037323037324
+valid_loss_cls 0.3494640473371897
+
+
+valid_weighted_f1_mlm 0.3267288970871136
+valid_acc_mlm 0.36468838769946427
+valid_loss_mlm 4.085183953016232
+
+
+valid_weighted_f1_pp 0.7280756161672322
+valid_acc_pp 0.7286279292744141
+valid_loss_pp 1.6581118253561167
+-saving model-
+
+Train_Epoch: 1
+100%|██████████████████████████████████| 91397/91397 [16:07:57<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.8833979566930833
+train_acc_cls 0.8834126807198843
+train_loss_cls 0.27730153397313245
+
+
+train_weighted_f1_mlm 0.33195234668108453
+train_acc_mlm 0.36445566442246174
+train_loss_mlm 4.009450922119595
+
+
+train_weighted_f1_pp 0.7081863360026737
+train_acc_pp 0.7093823777476881
+train_loss_pp 1.6951116268025193
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 1
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.894773427842535
+valid_acc_cls 0.8947876447876448
+valid_loss_cls 0.2610560226134765
+
+
+valid_weighted_f1_mlm 0.38166527795831734
+valid_acc_mlm 0.41280765637809086
+valid_loss_mlm 3.5909610772744203
+
+
+valid_weighted_f1_pp 0.7572763766390734
+valid_acc_pp 0.7569266236146753
+valid_loss_pp 1.3952396832979643
+-saving model-
+
+Train_Epoch: 2
+100%|██████████████████████████████████| 91397/91397 [16:07:12<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9079578212290291
+train_acc_cls 0.9079650096488793
+train_loss_cls 0.22541556088869832
+
+
+train_weighted_f1_mlm 0.37020361125572565
+train_acc_mlm 0.39788868868039073
+train_loss_mlm 3.6397895327396648
+
+
+train_weighted_f1_pp 0.7306639369747625
+train_acc_pp 0.7316119533972665
+train_loss_pp 1.4921578197263674
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 2
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.9047337746758407
+valid_acc_cls 0.9047619047619048
+valid_loss_cls 0.23463749027787112
+
+
+valid_weighted_f1_mlm 0.40534682489969925
+valid_acc_mlm 0.43353097058318874
+valid_loss_mlm 3.403571170415634
+
+
+valid_weighted_f1_pp 0.7674069902867606
+valid_acc_pp 0.7674804715039057
+valid_loss_pp 1.300964830777584
+-saving model-
+
+Train_Epoch: 3
+100%|██████████████████████████████████| 91397/91397 [16:08:01<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9212912156748622
+train_acc_cls 0.9212959860388718
+train_loss_cls 0.19596574675303066
+
+
+train_weighted_f1_mlm 0.39194520760217966
+train_acc_mlm 0.4172394094610481
+train_loss_mlm 3.4403899848028776
+
+
+train_weighted_f1_pp 0.7416414231817018
+train_acc_pp 0.7424839178936525
+train_loss_pp 1.3958533563132551
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 3
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.9108457616305888
+valid_acc_cls 0.9108751608751608
+valid_loss_cls 0.2275528297210351
+
+
+valid_weighted_f1_mlm 0.4155898359788066
+valid_acc_mlm 0.443215831315654
+valid_loss_mlm 3.3098633570548817
+
+
+valid_weighted_f1_pp 0.7728178020084214
+valid_acc_pp 0.7724859705028059
+valid_loss_pp 1.2636633762946496
+-saving model-
+
+Train_Epoch: 4
+100%|██████████████████████████████████| 91397/91397 [16:08:11<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9311873908355627
+train_acc_cls 0.9311907031578026
+train_loss_cls 0.17347608814839732
+
+
+train_weighted_f1_mlm 0.40750899805475377
+train_acc_mlm 0.4312503610186665
+train_loss_mlm 3.301886940995798
+
+
+train_weighted_f1_pp 0.7487490425019734
+train_acc_pp 0.7495201173930124
+train_loss_pp 1.3340558741198774
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 4
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.9039128477995705
+valid_acc_cls 0.903957528957529
+valid_loss_cls 0.24554021456875863
+
+
+valid_weighted_f1_mlm 0.42744818058876866
+valid_acc_mlm 0.4519283930375765
+valid_loss_mlm 3.24093768902314
+
+
+valid_weighted_f1_pp 0.7767599230509875
+valid_acc_pp 0.7762365697526861
+valid_loss_pp 1.228268465323326
+-saving model-
+
+Train_Epoch: 5
+100%|██████████████████████████████████| 91397/91397 [16:08:09<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9395300033050752
+train_acc_cls 0.9395320943196753
+train_loss_cls 0.1533835646570595
+
+
+train_weighted_f1_mlm 0.41995839059740764
+train_acc_mlm 0.44254889741041037
+train_loss_mlm 3.1912466183986123
+
+
+train_weighted_f1_pp 0.7542277093836977
+train_acc_pp 0.7549460269039701
+train_loss_pp 1.2872319190962873
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 5
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.9161805852964363
+valid_acc_cls 0.9161840411840412
+valid_loss_cls 0.22320102334786684
+
+
+valid_weighted_f1_mlm 0.43385872724668656
+valid_acc_mlm 0.4580100280250891
+valid_loss_mlm 3.1814246422205215
+
+
+valid_weighted_f1_pp 0.7797706694652745
+valid_acc_pp 0.7793420941315812
+valid_loss_pp 1.2084958599163935
+-saving model-
+
+Train_Epoch: 6
+100%|██████████████████████████████████| 91397/91397 [16:07:24<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9472360521415693
+train_acc_cls 0.9472375210791427
+train_loss_cls 0.1350843780798866
+
+
+train_weighted_f1_mlm 0.430766281229345
+train_acc_mlm 0.4524149037163968
+train_loss_mlm 3.0961167443516895
+
+
+train_weighted_f1_pp 0.7588639099157006
+train_acc_pp 0.7595353511489886
+train_loss_pp 1.2480977450088622
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 6
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.9187507571023961
+valid_acc_cls 0.9187580437580437
+valid_loss_cls 0.21512626419082667
+
+
+valid_weighted_f1_mlm 0.4398794244892293
+valid_acc_mlm 0.46460640954759497
+valid_loss_mlm 3.1446786623734693
+
+
+valid_weighted_f1_pp 0.7814232567292776
+valid_acc_pp 0.7809917938016412
+valid_loss_pp 1.1889893382023542
+-saving model-
+
+Train_Epoch: 7
+100%|██████████████████████████████████| 91397/91397 [16:07:02<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9548944456148831
+train_acc_cls 0.9548954214666023
+train_loss_cls 0.11693538050599822
+
+
+train_weighted_f1_mlm 0.44083507704901415
+train_acc_mlm 0.461733424337763
+train_loss_mlm 3.0098005671304837
+
+
+train_weighted_f1_pp 0.7630357973275627
+train_acc_pp 0.7636674545941928
+train_loss_pp 1.2134283256167906
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 7
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.9156997401322219
+valid_acc_cls 0.9157014157014157
+valid_loss_cls 0.24130792909134657
+
+
+valid_weighted_f1_mlm 0.4444727435618508
+valid_acc_mlm 0.47021142737307686
+valid_loss_mlm 3.1120222128354587
+
+
+valid_weighted_f1_pp 0.7834892990849871
+valid_acc_pp 0.7833711683257664
+valid_loss_pp 1.1719615153777294
+-saving model-
+
+Train_Epoch: 8
+100%|██████████████████████████████████| 91397/91397 [16:07:36<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9616339725033843
+train_acc_cls 0.9616345926340278
+train_loss_cls 0.10026465734737253
+
+
+train_weighted_f1_mlm 0.45056231030849525
+train_acc_mlm 0.4707562353460494
+train_loss_mlm 2.9289797277814826
+
+
+train_weighted_f1_pp 0.7669571775249562
+train_acc_pp 0.7675469915596461
+train_loss_pp 1.1815208615803547
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 8
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.9155344876009723
+valid_acc_cls 0.9155405405405406
+valid_loss_cls 0.25086519342775526
+
+
+valid_weighted_f1_mlm 0.4498156370059963
+valid_acc_mlm 0.4743865937124664
+valid_loss_mlm 3.082875459622114
+
+
+valid_weighted_f1_pp 0.7845949431345633
+valid_acc_pp 0.7845696680860664
+valid_loss_pp 1.1590523787033864
+-saving model-
+
+Train_Epoch: 9
+100%|██████████████████████████████████| 91397/91397 [16:07:45<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9682154251743548
+train_acc_cls 0.968215798449888
+train_loss_cls 0.08407624585322429
+
+
+train_weighted_f1_mlm 0.4594916366031229
+train_acc_mlm 0.47910601335940434
+train_loss_mlm 2.8540517531392173
+
+
+train_weighted_f1_pp 0.7706094619843479
+train_acc_pp 0.7711613859366532
+train_loss_pp 1.152496820954521
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 9
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.9185936291487031
+valid_acc_cls 0.9185971685971686
+valid_loss_cls 0.2650689552323176
+
+
+valid_weighted_f1_mlm 0.45263715845396185
+valid_acc_mlm 0.4773988141765009
+valid_loss_mlm 3.0752777270781686
+
+
+valid_weighted_f1_pp 0.7856402127388113
+valid_acc_pp 0.7855178928964214
+valid_loss_pp 1.1547587474187215
+-saving model-
+
+Process finished with exit code 0

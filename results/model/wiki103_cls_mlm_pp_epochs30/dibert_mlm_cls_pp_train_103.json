@@ -1,0 +1,1 @@
+{"seed": 391275, "batch_size": 64, "lr": 1e-05, "n_epochs": 30, "warmup": 0.1, "is_dibert": true}

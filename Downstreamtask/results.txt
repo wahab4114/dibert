@@ -1,0 +1,30 @@
+Evaluation Technique
+
+-For each task, we did finetuning and select best hyperparam using both models (bert-base and dibert)
+seperately.
+-We trained for fixed number of epochs(e.g. 15) and picked the model which performed well out of 15 models
+and used that model for reporting test accuracy.
+-We repeated this for every task using both models separately.
+-We ran models for at least 5 random restarts and reported average test accuracy of both models
+
+IMDB
+bert-base (test_accuracy) = 0.869024
+dibert    (test_acciracy) = 0.875632
+
+SciTail (2classes:Neutral, Entailment)
+bert-base (test_accuracy) = 0.80150517403
+dibert    (test_acciracy) = 0.80987770461
+
+sst2
+bert-base (test_accuracy) = 0.82097748489
+dibert    (test_acciracy) = 0.82701812191
+
+LIAR (6classes: pants-fire, false, barely-true, half-true, true)
+bert-base (test_accuracy) = 0.27716289945
+dibert    (test_acciracy) = 0.28168355417
+
+SNLI
+bert-base (test_acc) = 0.82280130293
+dibert (test_acc) = 0.8223941368
+bert-base (weighted_f1) = 82274750574
+dibert (weighted_f1) = 0.82237188969

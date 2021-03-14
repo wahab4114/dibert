@@ -1,0 +1,307 @@
+ssh://root@mp-weizenbaum.iais.fraunhofer.de:22022/opt/conda/envs/dibert/bin/python -u /cluster/pytorchic-bert/Downstreamtask/sst2/train_sst.py
+--loading csv file--
+--loading csv file--
+{'lrmain': 2e-05, 'drop_out': 0.0}
+selecting best_params
+
+Train_Epoch: 0
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.47it/s]
+train_weighted_f1 0.6177577414072024
+train_acc 0.6189306358381503
+
+Valid_Epoch: 0
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.30it/s]
+valid_weighted_f1: 0.6956903528761124
+valid_acc: 0.6961009174311926
+              precision    recall  f1-score   support
+
+           0       0.70      0.66      0.68       428
+           1       0.69      0.73      0.71       444
+
+    accuracy                           0.70       872
+   macro avg       0.70      0.70      0.70       872
+weighted avg       0.70      0.70      0.70       872
+
+-saving model-
+
+Train_Epoch: 1
+100%|█████████████████████████████████████████| 109/109 [00:09<00:00, 10.99it/s]
+train_weighted_f1 0.7247695829885011
+train_acc 0.7247109826589595
+
+Valid_Epoch: 1
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 23.17it/s]
+valid_weighted_f1: 0.7510730919731174
+valid_acc: 0.7511467889908257
+              precision    recall  f1-score   support
+
+           0       0.75      0.74      0.74       428
+           1       0.75      0.77      0.76       444
+
+    accuracy                           0.75       872
+   macro avg       0.75      0.75      0.75       872
+weighted avg       0.75      0.75      0.75       872
+
+-saving model-
+
+Train_Epoch: 2
+100%|█████████████████████████████████████████| 109/109 [00:09<00:00, 11.09it/s]
+train_weighted_f1 0.7785593809444122
+train_acc 0.7784682080924855
+
+Valid_Epoch: 2
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.39it/s]
+valid_weighted_f1: 0.7762651508445076
+valid_acc: 0.7763761467889908
+              precision    recall  f1-score   support
+
+           0       0.78      0.76      0.77       428
+           1       0.77      0.80      0.78       444
+
+    accuracy                           0.78       872
+   macro avg       0.78      0.78      0.78       872
+weighted avg       0.78      0.78      0.78       872
+
+-saving model-
+
+Train_Epoch: 3
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.87it/s]
+train_weighted_f1 0.8097054046290455
+train_acc 0.8096820809248555
+
+Valid_Epoch: 3
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.31it/s]
+valid_weighted_f1: 0.7924156326776232
+valid_acc: 0.7924311926605505
+              precision    recall  f1-score   support
+
+           0       0.78      0.81      0.79       428
+           1       0.81      0.77      0.79       444
+
+    accuracy                           0.79       872
+   macro avg       0.79      0.79      0.79       872
+weighted avg       0.79      0.79      0.79       872
+
+-saving model-
+
+Train_Epoch: 4
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.66it/s]
+train_weighted_f1 0.83921756741091
+train_acc 0.8391618497109826
+
+Valid_Epoch: 4
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.00it/s]
+valid_weighted_f1: 0.7945731044206809
+valid_acc: 0.7947247706422018
+              precision    recall  f1-score   support
+
+           0       0.80      0.77      0.79       428
+           1       0.79      0.82      0.80       444
+
+    accuracy                           0.79       872
+   macro avg       0.80      0.79      0.79       872
+weighted avg       0.80      0.79      0.79       872
+
+-saving model-
+
+Train_Epoch: 5
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.67it/s]
+train_weighted_f1 0.8601509883490873
+train_acc 0.8601156069364162
+
+Valid_Epoch: 5
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 22.01it/s]
+valid_weighted_f1: 0.8014840262537806
+valid_acc: 0.801605504587156
+              precision    recall  f1-score   support
+
+           0       0.81      0.78      0.79       428
+           1       0.80      0.82      0.81       444
+
+    accuracy                           0.80       872
+   macro avg       0.80      0.80      0.80       872
+weighted avg       0.80      0.80      0.80       872
+
+-saving model-
+
+Train_Epoch: 6
+100%|█████████████████████████████████████████| 109/109 [00:09<00:00, 11.12it/s]
+train_weighted_f1 0.8796552351267947
+train_acc 0.8796242774566474
+
+Valid_Epoch: 6
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 18.93it/s]
+valid_weighted_f1: 0.8118225995930891
+valid_acc: 0.8119266055045872
+              precision    recall  f1-score   support
+
+           0       0.82      0.79      0.81       428
+           1       0.81      0.83      0.82       444
+
+    accuracy                           0.81       872
+   macro avg       0.81      0.81      0.81       872
+weighted avg       0.81      0.81      0.81       872
+
+-saving model-
+
+Train_Epoch: 7
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.54it/s]
+train_weighted_f1 0.9019046672730808
+train_acc 0.901878612716763
+
+Valid_Epoch: 7
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 18.95it/s]
+valid_weighted_f1: 0.8176564723229008
+valid_acc: 0.8176605504587156
+              precision    recall  f1-score   support
+
+           0       0.81      0.81      0.81       428
+           1       0.82      0.82      0.82       444
+
+    accuracy                           0.82       872
+   macro avg       0.82      0.82      0.82       872
+weighted avg       0.82      0.82      0.82       872
+
+-saving model-
+
+Train_Epoch: 8
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.69it/s]
+train_weighted_f1 0.916781108801332
+train_acc 0.9167630057803469
+
+Valid_Epoch: 8
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 20.55it/s]
+valid_weighted_f1: 0.8170977349851501
+valid_acc: 0.8176605504587156
+              precision    recall  f1-score   support
+
+           0       0.85      0.77      0.80       428
+           1       0.79      0.87      0.83       444
+
+    accuracy                           0.82       872
+   macro avg       0.82      0.82      0.82       872
+weighted avg       0.82      0.82      0.82       872
+
+-saving model-
+
+Train_Epoch: 9
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.79it/s]
+train_weighted_f1 0.9394576290084795
+train_acc 0.9394508670520231
+
+Valid_Epoch: 9
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.16it/s]
+valid_weighted_f1: 0.823394495412844
+valid_acc: 0.823394495412844
+              precision    recall  f1-score   support
+
+           0       0.82      0.82      0.82       428
+           1       0.83      0.83      0.83       444
+
+    accuracy                           0.82       872
+   macro avg       0.82      0.82      0.82       872
+weighted avg       0.82      0.82      0.82       872
+
+-saving model-
+
+Train_Epoch: 10
+100%|█████████████████████████████████████████| 109/109 [00:09<00:00, 11.15it/s]
+train_weighted_f1 0.9472578429665909
+train_acc 0.9472543352601156
+
+Valid_Epoch: 10
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 22.16it/s]
+valid_weighted_f1: 0.8268109495501346
+valid_acc: 0.8268348623853211
+              precision    recall  f1-score   support
+
+           0       0.81      0.85      0.83       428
+           1       0.85      0.81      0.83       444
+
+    accuracy                           0.83       872
+   macro avg       0.83      0.83      0.83       872
+weighted avg       0.83      0.83      0.83       872
+
+-saving model-
+
+Train_Epoch: 11
+100%|█████████████████████████████████████████| 109/109 [00:09<00:00, 11.16it/s]
+train_weighted_f1 0.9606986698998788
+train_acc 0.9606936416184971
+
+Valid_Epoch: 11
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.28it/s]
+valid_weighted_f1: 0.8199292518160495
+valid_acc: 0.819954128440367
+              precision    recall  f1-score   support
+
+           0       0.82      0.81      0.82       428
+           1       0.82      0.83      0.82       444
+
+    accuracy                           0.82       872
+   macro avg       0.82      0.82      0.82       872
+weighted avg       0.82      0.82      0.82       872
+
+-saving model-
+
+Train_Epoch: 12
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.33it/s]
+train_weighted_f1 0.972402521993288
+train_acc 0.9723988439306358
+
+Valid_Epoch: 12
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 19.23it/s]
+valid_weighted_f1: 0.8242727304558527
+valid_acc: 0.8245412844036697
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.82       428
+           1       0.81      0.86      0.83       444
+
+    accuracy                           0.82       872
+   macro avg       0.83      0.82      0.82       872
+weighted avg       0.83      0.82      0.82       872
+
+-saving model-
+
+Train_Epoch: 13
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.64it/s]
+train_weighted_f1 0.9748584366367203
+train_acc 0.9748554913294798
+
+Valid_Epoch: 13
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 18.86it/s]
+valid_weighted_f1: 0.8197108883077345
+valid_acc: 0.819954128440367
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81       428
+           1       0.81      0.85      0.83       444
+
+    accuracy                           0.82       872
+   macro avg       0.82      0.82      0.82       872
+weighted avg       0.82      0.82      0.82       872
+
+-saving model-
+
+Train_Epoch: 14
+100%|█████████████████████████████████████████| 109/109 [00:10<00:00, 10.82it/s]
+train_weighted_f1 0.9787605003627026
+train_acc 0.9787572254335261
+
+Valid_Epoch: 14
+100%|███████████████████████████████████████████| 14/14 [00:00<00:00, 18.88it/s]
+valid_weighted_f1: 0.8265698189466258
+valid_acc: 0.8268348623853211
+              precision    recall  f1-score   support
+
+           0       0.85      0.79      0.82       428
+           1       0.81      0.86      0.83       444
+
+    accuracy                           0.83       872
+   macro avg       0.83      0.83      0.83       872
+weighted avg       0.83      0.83      0.83       872
+
+-saving model-
+
+Process finished with exit code 0

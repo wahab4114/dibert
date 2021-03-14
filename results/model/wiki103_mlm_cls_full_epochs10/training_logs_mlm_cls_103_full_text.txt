@@ -1,0 +1,313 @@
+ssh://root@mp-weizenbaum.iais.fraunhofer.de:22022/opt/conda/envs/dibert/bin/python -u /cluster/pytorchic-bert/train.py
+2924692
+6216
+BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 2,
+  "num_hidden_layers": 2,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+
+Train_Epoch: 0
+100%|██████████████████████████████████| 91397/91397 [11:43:14<00:00,  2.17it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.7279592067071912
+train_acc_cls 0.7280561508699036
+train_loss_cls 0.49274437086129486
+
+
+train_weighted_f1_mlm 0.21649194402333177
+train_acc_mlm 0.25943401653063636
+train_loss_mlm 5.494684397538439
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 0
+100%|█████████████████████████████████████████| 195/195 [00:39<00:00,  4.89it/s]
+valid_weighted_f1_cls 0.8607659558971394
+valid_acc_cls 0.8611647361647362
+valid_loss_cls 0.324016851072128
+
+
+valid_weighted_f1_mlm 0.3348264940506568
+valid_acc_mlm 0.37416353688063597
+valid_loss_mlm 4.040164391199748
+
+
+-saving model-
+
+Train_Epoch: 1
+100%|██████████████████████████████████| 91397/91397 [11:43:56<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.8830935090815055
+train_acc_cls 0.8831135039176775
+train_loss_cls 0.2776497194654
+
+
+train_weighted_f1_mlm 0.343818242862342
+train_acc_mlm 0.3755052708023816
+train_loss_mlm 3.942632295746839
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 1
+100%|█████████████████████████████████████████| 195/195 [00:39<00:00,  4.89it/s]
+valid_weighted_f1_cls 0.8955277442163607
+valid_acc_cls 0.8955920205920206
+valid_loss_cls 0.25400943694970546
+
+
+valid_weighted_f1_mlm 0.38558130270785607
+valid_acc_mlm 0.416372752750081
+valid_loss_mlm 3.5502464905763285
+
+
+-saving model-
+
+Train_Epoch: 2
+100%|██████████████████████████████████| 91397/91397 [11:44:30<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9097345984610276
+train_acc_cls 0.9097436584775422
+train_loss_cls 0.22143692823858196
+
+
+train_weighted_f1_mlm 0.3804927252942757
+train_acc_mlm 0.40773028300937225
+train_loss_mlm 3.577555536184287
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 2
+100%|█████████████████████████████████████████| 195/195 [00:39<00:00,  4.89it/s]
+valid_weighted_f1_cls 0.9075644655607376
+valid_acc_cls 0.9076576576576577
+valid_loss_cls 0.23388616318504016
+
+
+valid_weighted_f1_mlm 0.41157799730088235
+valid_acc_mlm 0.4402989342840257
+valid_loss_mlm 3.372568300442818
+
+
+-saving model-
+
+Train_Epoch: 3
+100%|██████████████████████████████████| 91397/91397 [11:44:40<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9244408957158959
+train_acc_cls 0.924446061328851
+train_loss_cls 0.18880421397829808
+
+
+train_weighted_f1_mlm 0.4020089111485287
+train_acc_mlm 0.4269000585286168
+train_loss_mlm 3.378657437031348
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 3
+100%|█████████████████████████████████████████| 195/195 [00:39<00:00,  4.88it/s]
+valid_weighted_f1_cls 0.9133965735642264
+valid_acc_cls 0.9134491634491635
+valid_loss_cls 0.224633837529482
+
+
+valid_weighted_f1_mlm 0.42092432702296784
+valid_acc_mlm 0.44891617257354205
+valid_loss_mlm 3.2828326971102983
+
+
+-saving model-
+
+Train_Epoch: 4
+100%|██████████████████████████████████| 91397/91397 [11:45:00<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9353619970042159
+train_acc_cls 0.9353651598185382
+train_loss_cls 0.1638111817235851
+
+
+train_weighted_f1_mlm 0.4180762781512003
+train_acc_mlm 0.4413677024573641
+train_loss_mlm 3.2338501089702874
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 4
+100%|█████████████████████████████████████████| 195/195 [00:39<00:00,  4.88it/s]
+valid_weighted_f1_cls 0.9113583713650937
+valid_acc_cls 0.9113577863577863
+valid_loss_cls 0.23575505383121662
+
+
+valid_weighted_f1_mlm 0.43246424235798137
+valid_acc_mlm 0.45881074485730083
+valid_loss_mlm 3.216287793868627
+
+
+-saving model-
+
+Train_Epoch: 5
+100%|██████████████████████████████████| 91397/91397 [11:45:17<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9447818395352633
+train_acc_cls 0.944783929384701
+train_loss_cls 0.14140862471078494
+
+
+train_weighted_f1_mlm 0.4313591891296917
+train_acc_mlm 0.45345335474478843
+train_loss_mlm 3.1162113070817963
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 5
+100%|█████████████████████████████████████████| 195/195 [00:40<00:00,  4.87it/s]
+valid_weighted_f1_cls 0.9208204332483465
+valid_acc_cls 0.9208494208494209
+valid_loss_cls 0.21916134444375832
+
+
+valid_weighted_f1_mlm 0.43945742374825836
+valid_acc_mlm 0.4644157626827827
+valid_loss_mlm 3.155730175360655
+
+
+-saving model-
+
+Train_Epoch: 6
+100%|██████████████████████████████████| 91397/91397 [11:45:04<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9533996124815275
+train_acc_cls 0.9534009051209494
+train_loss_cls 0.1208944835866969
+
+
+train_weighted_f1_mlm 0.4434840092918448
+train_acc_mlm 0.4645556332721377
+train_loss_mlm 3.0131844703244166
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 6
+100%|█████████████████████████████████████████| 195/195 [00:40<00:00,  4.87it/s]
+valid_weighted_f1_cls 0.919687054633336
+valid_acc_cls 0.9197232947232947
+valid_loss_cls 0.22403994269955615
+
+
+valid_weighted_f1_mlm 0.44589058355157585
+valid_acc_mlm 0.47019236268659564
+valid_loss_mlm 3.126622574145977
+
+
+-saving model-
+
+Train_Epoch: 7
+100%|██████████████████████████████████| 91397/91397 [11:45:08<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9613196178097367
+train_acc_cls 0.9613203715126243
+train_loss_cls 0.10145956052502882
+
+
+train_weighted_f1_mlm 0.45460155964983173
+train_acc_mlm 0.47480702011494796
+train_loss_mlm 2.9196099015384727
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 7
+100%|█████████████████████████████████████████| 195/195 [00:40<00:00,  4.87it/s]
+valid_weighted_f1_cls 0.9206569823429628
+valid_acc_cls 0.9206885456885456
+valid_loss_cls 0.24454388925089285
+
+
+valid_weighted_f1_mlm 0.4499816308345297
+valid_acc_mlm 0.47499666367986576
+valid_loss_mlm 3.097288191624177
+
+
+-saving model-
+
+Train_Epoch: 8
+100%|██████████████████████████████████| 91397/91397 [11:45:07<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9684434469484959
+train_acc_cls 0.9684438566522561
+train_loss_cls 0.08360698709181565
+
+
+train_weighted_f1_mlm 0.4651515484955528
+train_acc_mlm 0.48464885495601817
+train_loss_mlm 2.833291628005274
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 8
+100%|█████████████████████████████████████████| 195/195 [00:40<00:00,  4.87it/s]
+valid_weighted_f1_cls 0.9189175674465505
+valid_acc_cls 0.918918918918919
+valid_loss_cls 0.25829780373053673
+
+
+valid_weighted_f1_mlm 0.4545345847776865
+valid_acc_mlm 0.4790193125274055
+valid_loss_mlm 3.0712033638587366
+
+
+-saving model-
+
+Train_Epoch: 9
+100%|██████████████████████████████████| 91397/91397 [11:46:04<00:00,  2.16it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9748908055836876
+train_acc_cls 0.9748910312607276
+train_loss_cls 0.06753760461765418
+
+
+train_weighted_f1_mlm 0.47490768972207276
+train_acc_mlm 0.4937930043130632
+train_loss_mlm 2.755476903805583
+
+
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 9
+100%|█████████████████████████████████████████| 195/195 [00:40<00:00,  4.87it/s]
+valid_weighted_f1_cls 0.9218079042183276
+valid_acc_cls 0.9218146718146718
+valid_loss_cls 0.27586218988379607
+
+
+valid_weighted_f1_mlm 0.4569680287587387
+valid_acc_mlm 0.4811736220997846
+valid_loss_mlm 3.063728133226052
+
+
+-saving model-
+
+Process finished with exit code 0

@@ -1,0 +1,2832 @@
+ssh://root@mp-weizenbaum.iais.fraunhofer.de:22022/opt/conda/envs/dibert/bin/python -u /cluster/pytorchic-bert/train.py
+BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 2,
+  "num_hidden_layers": 2,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+
+Train_Epoch: 0
+100%|███████████████████████████████████████| 4972/4972 [52:01<00:00,  1.59it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.5048317358132356
+train_acc_cls 0.5048364895696499
+train_loss_cls 0.6954408726525326
+
+
+train_weighted_f1_mlm 0.02110959589059112
+train_acc_mlm 0.06731184239552661
+train_loss_mlm 8.16667148190358
+
+
+train_weighted_f1_pp 0.009612796095252455
+train_acc_pp 0.03812947109854092
+train_loss_pp 8.638765842609605
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 0
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.31it/s]
+valid_weighted_f1_cls 0.328557031466724
+valid_acc_cls 0.4946911196911197
+valid_loss_cls 0.7008512503061539
+
+
+valid_weighted_f1_mlm 0.05529067487938982
+valid_acc_mlm 0.11239369326325849
+valid_loss_mlm 7.3537663288605515
+
+
+valid_weighted_f1_pp 0.02564101277139878
+valid_acc_pp 0.0769758259781483
+valid_loss_pp 7.771147554348676
+-saving model-
+
+Train_Epoch: 1
+100%|███████████████████████████████████████| 4972/4972 [52:11<00:00,  1.59it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.526179603902961
+train_acc_cls 0.5262188645091544
+train_loss_cls 0.6921763311732899
+
+
+train_weighted_f1_mlm 0.06838728877966904
+train_acc_mlm 0.12871174633482688
+train_loss_mlm 7.163485787419283
+
+
+train_weighted_f1_pp 0.08876664175124714
+train_acc_pp 0.14649239021993504
+train_loss_pp 7.1859812061343575
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 1
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.5054417953192142
+valid_acc_cls 0.5411840411840412
+valid_loss_cls 0.6840784855377979
+
+
+valid_weighted_f1_mlm 0.10250731634698401
+valid_acc_mlm 0.17742952699474437
+valid_loss_mlm 6.752279019967103
+
+
+valid_weighted_f1_pp 0.16560611022363586
+valid_acc_pp 0.2507148992425072
+valid_loss_pp 6.311489525819436
+-saving model-
+
+Train_Epoch: 2
+100%|███████████████████████████████████████| 4972/4972 [52:13<00:00,  1.59it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.6051831369917903
+train_acc_cls 0.6051865772487005
+train_loss_cls 0.6535537478934347
+
+
+train_weighted_f1_mlm 0.12366689923855372
+train_acc_mlm 0.19442257706805333
+train_loss_mlm 6.3675046577054655
+
+
+train_weighted_f1_pp 0.2859943388068765
+train_acc_pp 0.35130929552241896
+train_loss_pp 5.310802441686752
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 2
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.6649520838199442
+valid_acc_cls 0.6652187902187903
+valid_loss_cls 0.6030029727862432
+
+
+valid_weighted_f1_mlm 0.1566099944613921
+valid_acc_mlm 0.23042522694696607
+valid_loss_mlm 5.9808998841505785
+
+
+valid_weighted_f1_pp 0.4280844271353383
+valid_acc_pp 0.49168808124224567
+valid_loss_pp 4.150031174146212
+-saving model-
+
+Train_Epoch: 3
+100%|███████████████████████████████████████| 4972/4972 [52:21<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.691712975937593
+train_acc_cls 0.691815993413072
+train_loss_cls 0.5770994006796221
+
+
+train_weighted_f1_mlm 0.16699926087885716
+train_acc_mlm 0.2341608669957717
+train_loss_mlm 5.687051509525732
+
+
+train_weighted_f1_pp 0.4778968565259643
+train_acc_pp 0.5197316597879312
+train_loss_pp 3.651362975038834
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 3
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.30it/s]
+valid_weighted_f1_cls 0.7139081877545247
+valid_acc_cls 0.7168597168597168
+valid_loss_cls 0.5547469343894568
+
+
+valid_weighted_f1_mlm 0.18970505750262992
+valid_acc_mlm 0.2538174868609651
+valid_loss_mlm 5.560455542344314
+
+
+valid_weighted_f1_pp 0.5636802407961263
+valid_acc_pp 0.5972881547646399
+valid_loss_pp 3.0847757620689196
+-saving model-
+
+Train_Epoch: 4
+100%|███████████████████████████████████████| 4972/4972 [52:25<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.7589262284767279
+train_acc_cls 0.7590931660622364
+train_loss_cls 0.48940374056957753
+
+
+train_weighted_f1_mlm 0.2089622970900241
+train_acc_mlm 0.26899209306820976
+train_loss_mlm 5.142553428441214
+
+
+train_weighted_f1_pp 0.5784744453332655
+train_acc_pp 0.6002266342711262
+train_loss_pp 2.7673990706810527
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 4
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.7331219718363263
+valid_acc_cls 0.7401866151866152
+valid_loss_cls 0.5423838388461333
+
+
+valid_weighted_f1_mlm 0.2166776024402015
+valid_acc_mlm 0.2746870520783564
+valid_loss_mlm 5.2941134134928385
+
+
+valid_weighted_f1_pp 0.6219715900422909
+valid_acc_pp 0.6402598733859537
+valid_loss_pp 2.6155179023742674
+-saving model-
+
+Train_Epoch: 5
+100%|███████████████████████████████████████| 4972/4972 [52:27<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.8138898074200638
+train_acc_cls 0.8140135635405995
+train_loss_cls 0.40485526180780423
+
+
+train_weighted_f1_mlm 0.25144413840918384
+train_acc_mlm 0.30376503346261935
+train_loss_mlm 4.658759199844093
+
+
+train_weighted_f1_pp 0.6346285849857799
+train_acc_pp 0.6444740309898918
+train_loss_pp 2.26126778137751
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 5
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.7850761588515537
+valid_acc_cls 0.7852316602316602
+valid_loss_cls 0.46691843217764145
+
+
+valid_weighted_f1_mlm 0.23925281461477133
+valid_acc_mlm 0.2899952221691352
+valid_loss_mlm 5.1399229538746365
+
+
+valid_weighted_f1_pp 0.6496368131957763
+valid_acc_pp 0.6598352108643476
+valid_loss_pp 2.3916606744130453
+-saving model-
+
+Train_Epoch: 6
+100%|███████████████████████████████████████| 4972/4972 [52:31<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.8550566479688537
+train_acc_cls 0.8551127257185597
+train_loss_cls 0.33239775221444195
+
+
+train_weighted_f1_mlm 0.2933556143246184
+train_acc_mlm 0.33755965981822245
+train_loss_mlm 4.22003942651319
+
+
+train_weighted_f1_pp 0.6682982749692404
+train_acc_pp 0.6726120444990611
+train_loss_pp 1.9459467717264318
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 6
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7824996649328025
+valid_acc_cls 0.7824967824967825
+valid_loss_cls 0.4811309808339828
+
+
+valid_weighted_f1_mlm 0.2571985745516278
+valid_acc_mlm 0.2990157668418538
+valid_loss_mlm 5.0606155982384315
+
+
+valid_weighted_f1_pp 0.6616970080637242
+valid_acc_pp 0.6683397724340507
+valid_loss_pp 2.290558967834864
+-saving model-
+
+Train_Epoch: 7
+100%|███████████████████████████████████████| 4972/4972 [52:33<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.8866167349181195
+train_acc_cls 0.8866394725429438
+train_loss_cls 0.2712770223674497
+
+
+train_weighted_f1_mlm 0.3351442447190471
+train_acc_mlm 0.37135576176061114
+train_loss_mlm 3.81950286929874
+
+
+train_weighted_f1_pp 0.6902760513023415
+train_acc_pp 0.6922166451311395
+train_loss_pp 1.7354518164575627
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 7
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7792463633999068
+valid_acc_cls 0.7792792792792793
+valid_loss_cls 0.4964016976264807
+
+
+valid_weighted_f1_mlm 0.2671759973698694
+valid_acc_mlm 0.3053798375537506
+valid_loss_mlm 5.046792998680702
+
+
+valid_weighted_f1_pp 0.6659238945623267
+valid_acc_pp 0.6712453209005079
+valid_loss_pp 2.259865495486137
+-saving model-
+
+Train_Epoch: 8
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9090999374104507
+train_acc_cls 0.9091091934155862
+train_loss_cls 0.2231960584055887
+
+
+train_weighted_f1_mlm 0.37736421950673654
+train_acc_mlm 0.4056476608629379
+train_loss_mlm 3.451870022430021
+
+
+train_weighted_f1_pp 0.7069335109697975
+train_acc_pp 0.7078537827228449
+train_loss_pp 1.580406976580524
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 8
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7745648448533895
+valid_acc_cls 0.7754182754182755
+valid_loss_cls 0.5820316683023404
+
+
+valid_weighted_f1_mlm 0.27558774643876055
+valid_acc_mlm 0.3097372193024367
+valid_loss_mlm 5.099255855266865
+
+
+valid_weighted_f1_pp 0.6641449160012299
+valid_acc_pp 0.6696299490645335
+valid_loss_pp 2.2701484729082155
+-saving model-
+
+Train_Epoch: 9
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9284451820875221
+train_acc_cls 0.9284488664575778
+train_loss_cls 0.17994772770336423
+
+
+train_weighted_f1_mlm 0.42195470675509994
+train_acc_mlm 0.4429955001980975
+train_loss_mlm 3.0877396839334423
+
+
+train_weighted_f1_pp 0.7217937511594451
+train_acc_pp 0.7222527751928177
+train_loss_pp 1.4488320195041926
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 9
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7650291263799908
+valid_acc_cls 0.7657657657657657
+valid_loss_cls 0.6229963414179973
+
+
+valid_weighted_f1_mlm 0.280748803327044
+valid_acc_mlm 0.3102150023889154
+valid_loss_mlm 5.175534167656532
+
+
+valid_weighted_f1_pp 0.6676687784791292
+valid_acc_pp 0.6725567059139576
+valid_loss_pp 2.277549003943419
+-saving model-
+
+Train_Epoch: 10
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.944908776023379
+train_acc_cls 0.9449099011332281
+train_loss_cls 0.1412374780889659
+
+
+train_weighted_f1_mlm 0.47095457503062405
+train_acc_mlm 0.4859040883345273
+train_loss_mlm 2.7237221492650714
+
+
+train_weighted_f1_pp 0.7364389349436568
+train_acc_pp 0.7366861227135146
+train_loss_pp 1.3268667901607645
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 10
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7739486953486184
+valid_acc_cls 0.7742921492921493
+valid_loss_cls 0.695011569139285
+
+
+valid_weighted_f1_mlm 0.28444977567801666
+valid_acc_mlm 0.311055900621118
+valid_loss_mlm 5.273193721282176
+
+
+valid_weighted_f1_pp 0.664732234957344
+valid_acc_pp 0.6695451155326662
+valid_loss_pp 2.297664170387464
+-saving model-
+
+Train_Epoch: 11
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9558582130381683
+train_acc_cls 0.9558587833038975
+train_loss_cls 0.11553226857396871
+
+
+train_weighted_f1_mlm 0.5162934709502122
+train_acc_mlm 0.5269940157577913
+train_loss_mlm 2.4054850219289623
+
+
+train_weighted_f1_pp 0.7488015934458324
+train_acc_pp 0.748928790432282
+train_loss_pp 1.2277764992448272
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 11
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7620203539560102
+valid_acc_cls 0.762065637065637
+valid_loss_cls 0.7380459388097127
+
+
+valid_weighted_f1_mlm 0.28309803715151793
+valid_acc_mlm 0.3096607740086001
+valid_loss_mlm 5.40762555049016
+
+
+valid_weighted_f1_pp 0.6646323694811506
+valid_acc_pp 0.6698738454686523
+valid_loss_pp 2.329723209601182
+-saving model-
+
+Train_Epoch: 12
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9621941512961751
+train_acc_cls 0.9621943018044914
+train_loss_cls 0.09803370734919664
+
+
+train_weighted_f1_mlm 0.5582034404849957
+train_acc_mlm 0.5659583604164992
+train_loss_mlm 2.1228312988580473
+
+
+train_weighted_f1_pp 0.7600617953065699
+train_acc_pp 0.7601104051360256
+train_loss_pp 1.1434440762763625
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 12
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7808216439064107
+valid_acc_cls 0.7808880308880309
+valid_loss_cls 0.7767203057041535
+
+
+valid_weighted_f1_mlm 0.2836838416743633
+valid_acc_mlm 0.30713807931199233
+valid_loss_mlm 5.578936395889674
+
+
+valid_weighted_f1_pp 0.6635860096138967
+valid_acc_pp 0.6690608574549234
+valid_loss_pp 2.36149389560406
+-saving model-
+
+Train_Epoch: 13
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9690702671736311
+train_acc_cls 0.9690703506533503
+train_loss_cls 0.08243275116635984
+
+
+train_weighted_f1_mlm 0.597360930075053
+train_acc_mlm 0.6032102866105993
+train_loss_mlm 1.8768984126354165
+
+
+train_weighted_f1_pp 0.7699757611364075
+train_acc_pp 0.770003023789782
+train_loss_pp 1.0712690508159437
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 13
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7779326741590893
+valid_acc_cls 0.777992277992278
+valid_loss_cls 0.8200108430324456
+
+
+valid_weighted_f1_mlm 0.2826844670251175
+valid_acc_mlm 0.30539894887720975
+valid_loss_mlm 5.726147575867482
+
+
+valid_weighted_f1_pp 0.6613836925341764
+valid_acc_pp 0.667236936519775
+valid_loss_pp 2.397454098554758
+-saving model-
+
+Train_Epoch: 14
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9723071609982935
+train_acc_cls 0.9723072475063324
+train_loss_cls 0.0744607678880495
+
+
+train_weighted_f1_mlm 0.6326308508926577
+train_acc_mlm 0.6370477049829828
+train_loss_mlm 1.6600284676156691
+
+
+train_weighted_f1_pp 0.7785197616565375
+train_acc_pp 0.778550614941775
+train_loss_pp 1.009929800839167
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 14
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.7797842119564472
+valid_acc_cls 0.7799227799227799
+valid_loss_cls 0.815975143130009
+
+
+valid_weighted_f1_mlm 0.28185781958790723
+valid_acc_mlm 0.3028380315336837
+valid_loss_mlm 5.906130788265131
+
+
+valid_weighted_f1_pp 0.6601135336310625
+valid_acc_pp 0.6657276065986348
+valid_loss_pp 2.4385307886661627
+-saving model-
+
+Train_Epoch: 15
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9753932473436591
+train_acc_cls 0.9753932986807289
+train_loss_cls 0.0657768250636185
+
+
+train_weighted_f1_mlm 0.6645878162026683
+train_acc_mlm 0.6679516568257324
+train_loss_mlm 1.4729395240353464
+
+
+train_weighted_f1_pp 0.7863759494339239
+train_acc_pp 0.7864090601357897
+train_loss_pp 0.9558690675951642
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 15
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.769792288777075
+valid_acc_cls 0.7705920205920206
+valid_loss_cls 0.8668360488154949
+
+
+valid_weighted_f1_mlm 0.27926910615769474
+valid_acc_mlm 0.29934065934065934
+valid_loss_mlm 6.095763402107434
+
+
+valid_weighted_f1_pp 0.6601200340987785
+valid_acc_pp 0.6660033155772038
+valid_loss_pp 2.4899531486706854
+-saving model-
+
+Train_Epoch: 16
+100%|███████████████████████████████████████| 4972/4972 [52:35<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9771594232699311
+train_acc_cls 0.9771594501675016
+train_loss_cls 0.061072807902996955
+
+
+train_weighted_f1_mlm 0.6926734379202755
+train_acc_mlm 0.6952308297298274
+train_loss_mlm 1.3125128892406952
+
+
+train_weighted_f1_pp 0.7939311677716936
+train_acc_pp 0.7939659443290036
+train_loss_pp 0.9069901587305199
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 16
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.7757346453325399
+valid_acc_cls 0.7759009009009009
+valid_loss_cls 0.8980375083593222
+
+
+valid_weighted_f1_mlm 0.2795516814572348
+valid_acc_mlm 0.2976588628762542
+valid_loss_mlm 6.241840489705404
+
+
+valid_weighted_f1_pp 0.6584040943425916
+valid_acc_pp 0.6643419922448013
+valid_loss_pp 2.5204585124284793
+-saving model-
+
+Train_Epoch: 17
+100%|███████████████████████████████████████| 4972/4972 [52:34<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9792649839317558
+train_acc_cls 0.9792650044310918
+train_loss_cls 0.05628035104400287
+
+
+train_weighted_f1_mlm 0.7194662802622794
+train_acc_mlm 0.7214711895369093
+train_loss_mlm 1.1688443563896518
+
+
+train_weighted_f1_pp 0.8006406192793303
+train_acc_pp 0.8006773125516178
+train_loss_pp 0.8635897300747836
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 17
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.7809018221220535
+valid_acc_cls 0.7810489060489061
+valid_loss_cls 0.868484273323646
+
+
+valid_weighted_f1_mlm 0.276416417828211
+valid_acc_mlm 0.29488772097467747
+valid_loss_mlm 6.416965064024314
+
+
+valid_weighted_f1_pp 0.6575776578038809
+valid_acc_pp 0.6640203317698042
+valid_loss_pp 2.5526757704905974
+-saving model-
+
+Train_Epoch: 18
+100%|███████████████████████████████████████| 4972/4972 [52:35<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9809620077018024
+train_acc_cls 0.9809620183151795
+train_loss_cls 0.051552844026150506
+
+
+train_weighted_f1_mlm 0.7427762319743839
+train_acc_mlm 0.744282285654419
+train_loss_mlm 1.0486283199809199
+
+
+train_weighted_f1_pp 0.8067802717987261
+train_acc_pp 0.8068204591416199
+train_loss_pp 0.8257974389451986
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 18
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7831134092311622
+valid_acc_cls 0.7831402831402832
+valid_loss_cls 0.8884979332486789
+
+
+valid_weighted_f1_mlm 0.27559391001766786
+valid_acc_mlm 0.2940086000955566
+valid_loss_mlm 6.586311778044089
+
+
+valid_weighted_f1_pp 0.6541981738129563
+valid_acc_pp 0.6605138791192865
+valid_loss_pp 2.5958687806740786
+-saving model-
+
+Train_Epoch: 19
+100%|███████████████████████████████████████| 4972/4972 [52:35<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9824390415991182
+train_acc_cls 0.9824390489179965
+train_loss_cls 0.04835590470689203
+
+
+train_weighted_f1_mlm 0.7632508721687317
+train_acc_mlm 0.7644233074835122
+train_loss_mlm 0.9454626584139354
+
+
+train_weighted_f1_pp 0.8129051784931783
+train_acc_pp 0.8129449285810301
+train_loss_pp 0.7889509206564314
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 19
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.29it/s]
+valid_weighted_f1_cls 0.7762821188225937
+valid_acc_cls 0.7771879021879022
+valid_loss_cls 0.9847580746198312
+
+
+valid_weighted_f1_mlm 0.27380379020040846
+valid_acc_mlm 0.2930530339225991
+valid_loss_mlm 6.765751897371732
+
+
+valid_weighted_f1_pp 0.6545700058757246
+valid_acc_pp 0.6607259629489549
+valid_loss_pp 2.627895578971276
+-saving model-
+
+Train_Epoch: 20
+100%|███████████████████████████████████████| 4972/4972 [52:35<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9831995499639821
+train_acc_cls 0.983199562547532
+train_loss_cls 0.04621382468202882
+
+
+train_weighted_f1_mlm 0.7820747472453845
+train_acc_mlm 0.7829426594353077
+train_loss_mlm 0.8559896858260695
+
+
+train_weighted_f1_pp 0.8183392413108064
+train_acc_pp 0.8183787524372318
+train_loss_pp 0.7565635943355238
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 20
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7801873954791769
+valid_acc_cls 0.7804054054054054
+valid_loss_cls 0.9638769610952108
+
+
+valid_weighted_f1_mlm 0.273354789330595
+valid_acc_mlm 0.29156235069278547
+valid_loss_mlm 6.896997926174066
+
+
+valid_weighted_f1_pp 0.6543110230537497
+valid_acc_pp 0.6606800114525267
+valid_loss_pp 2.6553811702972805
+-saving model-
+
+Train_Epoch: 21
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.984236617258206
+train_acc_cls 0.9842366265878079
+train_loss_cls 0.04288684557237006
+
+
+train_weighted_f1_mlm 0.7988528987188734
+train_acc_mlm 0.7995134990368107
+train_loss_mlm 0.7786635312454795
+
+
+train_weighted_f1_pp 0.823517734074892
+train_acc_pp 0.8235606392547898
+train_loss_pp 0.726778867809598
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 21
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7796658085080354
+valid_acc_cls 0.7800836550836551
+valid_loss_cls 0.9806414329088651
+
+
+valid_weighted_f1_mlm 0.27305575276200933
+valid_acc_mlm 0.2895747730530339
+valid_loss_mlm 7.007829839755328
+
+
+valid_weighted_f1_pp 0.6536628660056666
+valid_acc_pp 0.6602593785236844
+valid_loss_pp 2.680761071963188
+-saving model-
+
+Train_Epoch: 22
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9848211461413333
+train_acc_cls 0.984821153592327
+train_loss_cls 0.0416845473954389
+
+
+train_weighted_f1_mlm 0.8127278916413531
+train_acc_mlm 0.8132357183488479
+train_loss_mlm 0.7137767188820452
+
+
+train_weighted_f1_pp 0.8284425932582081
+train_acc_pp 0.8284817276118904
+train_loss_pp 0.6994737692159314
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 22
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7848461684624178
+valid_acc_cls 0.7850707850707851
+valid_loss_cls 0.9923627913571321
+
+
+valid_weighted_f1_mlm 0.27141009073087496
+valid_acc_mlm 0.288944099378882
+valid_loss_mlm 7.1670997619628904
+
+
+valid_weighted_f1_pp 0.6515313568433206
+valid_acc_pp 0.658262255794307
+valid_loss_pp 2.7130270138764994
+-saving model-
+
+Train_Epoch: 23
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.984984558497551
+train_acc_cls 0.9849845697441281
+train_loss_cls 0.04074519297865924
+
+
+train_weighted_f1_mlm 0.8258268382955462
+train_acc_mlm 0.8262061261936575
+train_loss_mlm 0.6557635019262855
+
+
+train_weighted_f1_pp 0.8331102798377354
+train_acc_pp 0.83314815233902
+train_loss_pp 0.6745828120150301
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 23
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7756667196740762
+valid_acc_cls 0.7757400257400258
+valid_loss_cls 0.9223498854308556
+
+
+valid_weighted_f1_mlm 0.26996833795706676
+valid_acc_mlm 0.2862111801242236
+valid_loss_mlm 7.293552117469983
+
+
+valid_weighted_f1_pp 0.6504022242814941
+valid_acc_pp 0.6575623791564013
+valid_loss_pp 2.750078466611031
+-saving model-
+
+Train_Epoch: 24
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9863798878148953
+train_acc_cls 0.9863798922710445
+train_loss_cls 0.03796078551308165
+
+
+train_weighted_f1_mlm 0.8371984977525202
+train_acc_mlm 0.837481084821893
+train_loss_mlm 0.6076331941031776
+
+
+train_weighted_f1_pp 0.8378864024632663
+train_acc_pp 0.8379207777983484
+train_loss_pp 0.6492041843678811
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 24
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.7809402829462992
+valid_acc_cls 0.7810489060489061
+valid_loss_cls 0.9776664788142229
+
+
+valid_weighted_f1_mlm 0.2699304246344525
+valid_acc_mlm 0.2865934065934066
+valid_loss_mlm 7.385584234580016
+
+
+valid_weighted_f1_pp 0.6505740464192985
+valid_acc_pp 0.6582339779503512
+valid_loss_pp 2.7670576022221494
+-saving model-
+
+Train_Epoch: 25
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9866187304533545
+train_acc_cls 0.9866187312621384
+train_loss_cls 0.03728767452712572
+
+
+train_weighted_f1_mlm 0.8477159726156652
+train_acc_mlm 0.8479370927841593
+train_loss_mlm 0.5638467535880047
+
+
+train_weighted_f1_pp 0.8421607665472637
+train_acc_pp 0.8421951186926103
+train_loss_pp 0.6264116220949449
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 25
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.28it/s]
+valid_weighted_f1_cls 0.778733501197443
+valid_acc_cls 0.7787966537966537
+valid_loss_cls 1.0576233118390426
+
+
+valid_weighted_f1_mlm 0.2687944309442964
+valid_acc_mlm 0.28638318203535595
+valid_loss_mlm 7.502212495070237
+
+
+valid_weighted_f1_pp 0.6491111919976285
+valid_acc_pp 0.6560035630083384
+valid_loss_pp 2.785019466204521
+-saving model-
+
+Train_Epoch: 26
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9878883443794567
+train_acc_cls 0.9878883490569003
+train_loss_cls 0.033721356089939106
+
+
+train_weighted_f1_mlm 0.8569120218264182
+train_acc_mlm 0.8570643348460557
+train_loss_mlm 0.5265622173382789
+
+
+train_weighted_f1_pp 0.8461884890151072
+train_acc_pp 0.8462177952073614
+train_loss_pp 0.6058948788782904
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 26
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7776751988404825
+valid_acc_cls 0.7786357786357786
+valid_loss_cls 1.0917452430113768
+
+
+valid_weighted_f1_mlm 0.267810062882584
+valid_acc_mlm 0.2829622551361682
+valid_loss_mlm 7.591988698030129
+
+
+valid_weighted_f1_pp 0.6475676504461038
+valid_acc_pp 0.6546214833849993
+valid_loss_pp 2.8150903273851444
+-saving model-
+
+Train_Epoch: 27
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9883597387537426
+train_acc_cls 0.9883597418024802
+train_loss_cls 0.03227938190498804
+
+
+train_weighted_f1_mlm 0.865240267717598
+train_acc_mlm 0.8653622971344842
+train_loss_mlm 0.4930281139316812
+
+
+train_weighted_f1_pp 0.8502477786493855
+train_acc_pp 0.850280961603323
+train_loss_pp 0.5858313658739996
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 27
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7848460063588563
+valid_acc_cls 0.7849099099099099
+valid_loss_cls 1.0399770022202761
+
+
+valid_weighted_f1_mlm 0.26745909638580423
+valid_acc_mlm 0.2847204968944099
+valid_loss_mlm 7.702816571944799
+
+
+valid_weighted_f1_pp 0.6490227698148148
+valid_acc_pp 0.6562368552209736
+valid_loss_pp 2.8393456605764538
+-saving model-
+
+Train_Epoch: 28
+100%|███████████████████████████████████████| 4972/4972 [52:41<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9889191256385919
+train_acc_cls 0.9889191278605683
+train_loss_cls 0.031182609275145608
+
+
+train_weighted_f1_mlm 0.872438508327814
+train_acc_mlm 0.8725410268460881
+train_loss_mlm 0.46428966377161246
+
+
+train_weighted_f1_pp 0.85412761334225
+train_acc_pp 0.8541551752203017
+train_loss_pp 0.5667307189488162
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 28
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7797372287419492
+valid_acc_cls 0.7797619047619048
+valid_loss_cls 0.9690200225665019
+
+
+valid_weighted_f1_mlm 0.2677273156263128
+valid_acc_mlm 0.2863258480649785
+valid_loss_mlm 7.804030381716215
+
+
+valid_weighted_f1_pp 0.6486606040172037
+valid_acc_pp 0.6566433492278381
+valid_loss_pp 2.8597568047352326
+-saving model-
+
+Train_Epoch: 29
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9885608638825053
+train_acc_cls 0.9885608693739276
+train_loss_cls 0.03229842423233206
+
+
+train_weighted_f1_mlm 0.8793654412112736
+train_acc_mlm 0.8794239014071933
+train_loss_mlm 0.43764172910696925
+
+
+train_weighted_f1_pp 0.8576521514897989
+train_acc_pp 0.8576772495673581
+train_loss_pp 0.5489873212319368
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 29
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7783550102503709
+valid_acc_cls 0.7784749034749034
+valid_loss_cls 1.0181178849169579
+
+
+valid_weighted_f1_mlm 0.2659890322461257
+valid_acc_mlm 0.2849689440993789
+valid_loss_mlm 7.872598298390707
+
+
+valid_weighted_f1_pp 0.647991358236373
+valid_acc_pp 0.655402658824278
+valid_loss_pp 2.885792843500773
+-saving model-
+
+Train_Epoch: 30
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9898241997171315
+train_acc_cls 0.9898242019320818
+train_loss_cls 0.028423904079465965
+
+
+train_weighted_f1_mlm 0.8853403285376598
+train_acc_mlm 0.8854029790621613
+train_loss_mlm 0.4142554623201454
+
+
+train_weighted_f1_pp 0.8612978888885601
+train_acc_pp 0.8613224295128427
+train_loss_pp 0.5323044093608952
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 30
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7834689379513587
+valid_acc_cls 0.7834620334620335
+valid_loss_cls 0.9970096034117234
+
+
+valid_weighted_f1_mlm 0.26474823057738184
+valid_acc_mlm 0.28357381748686095
+valid_loss_mlm 7.96073222771669
+
+
+valid_weighted_f1_pp 0.6472717514867327
+valid_acc_pp 0.6553496378668608
+valid_loss_pp 2.910893989220644
+-saving model-
+
+Train_Epoch: 31
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9903018771075537
+train_acc_cls 0.9903018799142693
+train_loss_cls 0.02719768037193743
+
+
+train_weighted_f1_mlm 0.8911757993650056
+train_acc_mlm 0.891222693344292
+train_loss_mlm 0.3915802182769066
+
+
+train_weighted_f1_pp 0.8646951963420473
+train_acc_pp 0.8647218072501699
+train_loss_pp 0.5160420432878615
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 31
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.27it/s]
+valid_weighted_f1_cls 0.7812923337762075
+valid_acc_cls 0.7813706563706564
+valid_loss_cls 1.1368784167827704
+
+
+valid_weighted_f1_mlm 0.26589581804994955
+valid_acc_mlm 0.28414715719063544
+valid_loss_mlm 8.03678106650328
+
+
+valid_weighted_f1_pp 0.6477645523028188
+valid_acc_pp 0.6555016312781232
+valid_loss_pp 2.9194006895407654
+-saving model-
+
+Train_Epoch: 32
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.990590996582453
+train_acc_cls 0.990591000798225
+train_loss_cls 0.026965827719526398
+
+
+train_weighted_f1_mlm 0.8961984334156108
+train_acc_mlm 0.8962337860679522
+train_loss_mlm 0.37322603294675327
+
+
+train_weighted_f1_pp 0.8680524337620504
+train_acc_pp 0.8680708793775083
+train_loss_pp 0.5004227909882129
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 32
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7766845800170824
+valid_acc_cls 0.777027027027027
+valid_loss_cls 1.1324131719959087
+
+
+valid_weighted_f1_mlm 0.2659965378968642
+valid_acc_mlm 0.2847204968944099
+valid_loss_mlm 8.113005430270464
+
+
+valid_weighted_f1_pp 0.6474888419517655
+valid_acc_pp 0.6554910270866398
+valid_loss_pp 2.9474123551295355
+-saving model-
+
+Train_Epoch: 33
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9909555438454725
+train_acc_cls 0.9909555445214735
+train_loss_cls 0.026012778484449443
+
+
+train_weighted_f1_mlm 0.9011224553742058
+train_acc_mlm 0.9011511790307313
+train_loss_mlm 0.3545480975439159
+
+
+train_weighted_f1_pp 0.8710915446755135
+train_acc_pp 0.8711083021161348
+train_loss_pp 0.4861532938295761
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 33
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7856672360081874
+valid_acc_cls 0.7861969111969112
+valid_loss_cls 1.1076011593525226
+
+
+valid_weighted_f1_mlm 0.2661754209463773
+valid_acc_mlm 0.2837458193979933
+valid_loss_mlm 8.171002532274295
+
+
+valid_weighted_f1_pp 0.6479295966498626
+valid_acc_pp 0.6558480348665816
+valid_loss_pp 2.9720801622439654
+-saving model-
+
+Train_Epoch: 34
+100%|███████████████████████████████████████| 4972/4972 [52:41<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9911943811262522
+train_acc_cls 0.9911943835125673
+train_loss_cls 0.024498976677363404
+
+
+train_weighted_f1_mlm 0.9054223211520042
+train_acc_mlm 0.9054488255435877
+train_loss_mlm 0.3390217727486251
+
+
+train_weighted_f1_pp 0.874267613016451
+train_acc_pp 0.8742851900011533
+train_loss_pp 0.47206314183825554
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 34
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7834572187207189
+valid_acc_cls 0.7837837837837838
+valid_loss_cls 1.133061213294665
+
+
+valid_weighted_f1_mlm 0.2652387397833894
+valid_acc_mlm 0.2830195891065456
+valid_loss_mlm 8.196715122614151
+
+
+valid_weighted_f1_pp 0.6483353977800798
+valid_acc_pp 0.655724319299275
+valid_loss_pp 2.9662546329009225
+-saving model-
+
+Train_Epoch: 35
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9918166200843482
+train_acc_cls 0.9918166219367328
+train_loss_cls 0.023658531401593127
+
+
+train_weighted_f1_mlm 0.9095975399571141
+train_acc_mlm 0.909618096006103
+train_loss_mlm 0.3240115540019706
+
+
+train_weighted_f1_pp 0.8772216241411163
+train_acc_pp 0.8772399970225623
+train_loss_pp 0.4584155980368727
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 35
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7874783395191558
+valid_acc_cls 0.7879665379665379
+valid_loss_cls 1.190777423251898
+
+
+valid_weighted_f1_mlm 0.2643843798746513
+valid_acc_mlm 0.28357381748686095
+valid_loss_mlm 8.272247722821358
+
+
+valid_weighted_f1_pp 0.6468305026193911
+valid_acc_pp 0.6546568306899441
+valid_loss_pp 2.9889203218313365
+-saving model-
+
+Train_Epoch: 36
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.991433220638944
+train_acc_cls 0.9914332225036612
+train_loss_cls 0.024469809401147482
+
+
+train_weighted_f1_mlm 0.9130205266326169
+train_acc_mlm 0.9130480974890678
+train_loss_mlm 0.3111947874897493
+
+
+train_weighted_f1_pp 0.8801595052497926
+train_acc_pp 0.8801714916881227
+train_loss_pp 0.4458107021386261
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 36
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7867602902624669
+valid_acc_cls 0.787001287001287
+valid_loss_cls 1.0963062072984684
+
+
+valid_weighted_f1_mlm 0.26527839536653647
+valid_acc_mlm 0.2839751552795031
+valid_loss_mlm 8.30482000204233
+
+
+valid_weighted_f1_pp 0.6463815248153684
+valid_acc_pp 0.6543387049454414
+valid_loss_pp 3.02002456004803
+-saving model-
+
+Train_Epoch: 37
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9921308814163688
+train_acc_cls 0.9921308837671194
+train_loss_cls 0.022096820209002704
+
+
+train_weighted_f1_mlm 0.9160714164546603
+train_acc_mlm 0.9160944464077947
+train_loss_mlm 0.3002543410470624
+
+
+train_weighted_f1_pp 0.8827150142735546
+train_acc_pp 0.882727125739213
+train_loss_pp 0.4339133404429076
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 37
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7641430879242009
+valid_acc_cls 0.7664092664092664
+valid_loss_cls 1.2451049874990414
+
+
+valid_weighted_f1_mlm 0.2652767801191925
+valid_acc_mlm 0.2820066889632107
+valid_loss_mlm 8.347827212015789
+
+
+valid_weighted_f1_pp 0.6462992129730176
+valid_acc_pp 0.6545260456616485
+valid_loss_pp 3.032596798432179
+-saving model-
+
+Train_Epoch: 38
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9922880145324219
+train_acc_cls 0.9922880146823128
+train_loss_cls 0.02242707123744748
+
+
+train_weighted_f1_mlm 0.9198488786018812
+train_acc_mlm 0.9198660462316096
+train_loss_mlm 0.28703555629130867
+
+
+train_weighted_f1_pp 0.8856999292785499
+train_acc_pp 0.8857134248904523
+train_loss_pp 0.42128701635118654
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 38
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7812015647490599
+valid_acc_cls 0.7815315315315315
+valid_loss_cls 1.1083163836827645
+
+
+valid_weighted_f1_mlm 0.2642258373458516
+valid_acc_mlm 0.28275203057811754
+valid_loss_mlm 8.395566448798547
+
+
+valid_weighted_f1_pp 0.645642488360777
+valid_acc_pp 0.6539710929740162
+valid_loss_pp 3.042967833005465
+-saving model-
+
+Train_Epoch: 39
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9929039666835416
+train_acc_cls 0.9929039678698705
+train_loss_cls 0.02000407060676292
+
+
+train_weighted_f1_mlm 0.9225715092348
+train_acc_mlm 0.9225885038509126
+train_loss_mlm 0.27621877990657057
+
+
+train_weighted_f1_pp 0.8881191609422148
+train_acc_pp 0.8881276851812215
+train_loss_pp 0.4105507236810241
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 39
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7711628380693129
+valid_acc_cls 0.7722007722007722
+valid_loss_cls 1.2235861847798029
+
+
+valid_weighted_f1_mlm 0.2648878134502017
+valid_acc_mlm 0.28290492116579075
+valid_loss_mlm 8.439717603341126
+
+
+valid_weighted_f1_pp 0.6454866187136513
+valid_acc_pp 0.6534903696267678
+valid_loss_pp 3.059189230356461
+-saving model-
+
+Train_Epoch: 40
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9929102529216286
+train_acc_cls 0.9929102531064782
+train_loss_cls 0.020408342704927373
+
+
+train_weighted_f1_mlm 0.925598239795246
+train_acc_mlm 0.9256156701414276
+train_loss_mlm 0.26453645209978877
+
+
+train_weighted_f1_pp 0.8908485137746074
+train_acc_pp 0.8908552308154989
+train_loss_pp 0.3994415895181707
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 40
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7774755098301854
+valid_acc_cls 0.7775096525096525
+valid_loss_cls 1.1423148059978698
+
+
+valid_weighted_f1_mlm 0.2640948975196796
+valid_acc_mlm 0.28217869087434305
+valid_loss_mlm 8.483719412485758
+
+
+valid_weighted_f1_pp 0.6466021840543732
+valid_acc_pp 0.6543528438674193
+valid_loss_pp 3.0681087469443296
+-saving model-
+
+Train_Epoch: 41
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9932873642242295
+train_acc_cls 0.9932873673029421
+train_loss_cls 0.019966100534828158
+
+
+train_weighted_f1_mlm 0.9280403221235386
+train_acc_mlm 0.9280599796516582
+train_loss_mlm 0.256051403734824
+
+
+train_weighted_f1_pp 0.8931701608655205
+train_acc_pp 0.8931782866263694
+train_loss_pp 0.38905950791516425
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 41
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7811903948141304
+valid_acc_cls 0.7815315315315315
+valid_loss_cls 1.2608572074236013
+
+
+valid_weighted_f1_mlm 0.2643936968288117
+valid_acc_mlm 0.28168179646440517
+valid_loss_mlm 8.519309153923622
+
+
+valid_weighted_f1_pp 0.6453786681348525
+valid_acc_pp 0.6535681336976462
+valid_loss_pp 3.0950410965161446
+-saving model-
+
+Train_Epoch: 42
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9932747946937062
+train_acc_cls 0.9932747968297266
+train_loss_cls 0.018735153133599594
+
+
+train_weighted_f1_mlm 0.9308761348292588
+train_acc_mlm 0.930893106279876
+train_loss_mlm 0.24609860122407623
+
+
+train_weighted_f1_pp 0.8955693281767696
+train_acc_pp 0.8955719611526174
+train_loss_pp 0.37922977983999523
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 42
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7803902101232426
+valid_acc_cls 0.7804054054054054
+valid_loss_cls 1.206513442672216
+
+
+valid_weighted_f1_mlm 0.2651284450100441
+valid_acc_mlm 0.2840133779264214
+valid_loss_mlm 8.55404525903555
+
+
+valid_weighted_f1_pp 0.6476663218681902
+valid_acc_pp 0.6545861360800546
+valid_loss_pp 3.0803868709466395
+-saving model-
+
+Train_Epoch: 43
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9934884945266117
+train_acc_cls 0.9934884948743895
+train_loss_cls 0.01836831837985914
+
+
+train_weighted_f1_mlm 0.9336966199252327
+train_acc_mlm 0.9337070502798819
+train_loss_mlm 0.2363041055389498
+
+
+train_weighted_f1_pp 0.8978925803416612
+train_acc_pp 0.8978989705209125
+train_loss_pp 0.3694142403076564
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 43
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7820840890735768
+valid_acc_cls 0.7821750321750321
+valid_loss_cls 1.1362991255063277
+
+
+valid_weighted_f1_mlm 0.2635395538170728
+valid_acc_mlm 0.28114667940754895
+valid_loss_mlm 8.583418699411245
+
+
+valid_weighted_f1_pp 0.6452587686891361
+valid_acc_pp 0.6534550223218231
+valid_loss_pp 3.117634379558074
+-saving model-
+
+Train_Epoch: 44
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9937713306383694
+train_acc_cls 0.9937713305217375
+train_loss_cls 0.017688605209502502
+
+
+train_weighted_f1_mlm 0.9353607877056491
+train_acc_mlm 0.9353752011409237
+train_loss_mlm 0.22940281239560747
+
+
+train_weighted_f1_pp 0.9001397082693239
+train_acc_pp 0.9001450001267864
+train_loss_pp 0.35997082214811493
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 44
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.779116203227425
+valid_acc_cls 0.7791184041184042
+valid_loss_cls 1.2297750673997097
+
+
+valid_weighted_f1_mlm 0.2639627526903967
+valid_acc_mlm 0.28347826086956524
+valid_loss_mlm 8.600971630292062
+
+
+valid_weighted_f1_pp 0.6469885957389718
+valid_acc_pp 0.6547734767962616
+valid_loss_pp 3.116439347389417
+-saving model-
+
+Train_Epoch: 45
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9938278970538377
+train_acc_cls 0.993827897651207
+train_loss_cls 0.01739790826687741
+
+
+train_weighted_f1_mlm 0.9379155710117418
+train_acc_mlm 0.9379316552468546
+train_loss_mlm 0.22075000907761239
+
+
+train_weighted_f1_pp 0.9021287240215122
+train_acc_pp 0.9021350028070257
+train_loss_pp 0.35134726223908214
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 45
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7779238240336825
+valid_acc_cls 0.7781531531531531
+valid_loss_cls 1.1927267197997142
+
+
+valid_weighted_f1_mlm 0.2621587305065462
+valid_acc_mlm 0.2813186813186813
+valid_loss_mlm 8.641386000315348
+
+
+valid_weighted_f1_pp 0.6449160147598639
+valid_acc_pp 0.6533136331020442
+valid_loss_pp 3.1381094614664713
+-saving model-
+
+Train_Epoch: 46
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9941170177863611
+train_acc_cls 0.9941170185351628
+train_loss_cls 0.016439766384064313
+
+
+train_weighted_f1_mlm 0.9399174302173717
+train_acc_mlm 0.9399259107874985
+train_loss_mlm 0.21431450146585343
+
+
+train_weighted_f1_pp 0.9043032739667892
+train_acc_pp 0.9043060511513986
+train_loss_pp 0.3425696843864931
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 46
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7781282968846954
+valid_acc_cls 0.7781531531531531
+valid_loss_cls 1.2033062716325125
+
+
+valid_weighted_f1_mlm 0.2636209684816441
+valid_acc_mlm 0.28236980410893453
+valid_loss_mlm 8.682960282839261
+
+
+valid_weighted_f1_pp 0.6449085448847849
+valid_acc_pp 0.6533207025630331
+valid_loss_pp 3.150133681908632
+-saving model-
+
+Train_Epoch: 47
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9947769675057777
+train_acc_cls 0.9947769683789747
+train_loss_cls 0.015185834210592603
+
+
+train_weighted_f1_mlm 0.9417522111233296
+train_acc_mlm 0.9417674430958402
+train_loss_mlm 0.2069996239157425
+
+
+train_weighted_f1_pp 0.9064933953885483
+train_acc_pp 0.9064953676576645
+train_loss_pp 0.33390593596180407
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 47
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7825608788218995
+valid_acc_cls 0.782979407979408
+valid_loss_cls 1.2077684112084217
+
+
+valid_weighted_f1_mlm 0.2643627621068427
+valid_acc_mlm 0.2827138079311992
+valid_loss_mlm 8.69685157140096
+
+
+valid_weighted_f1_pp 0.6457998906231125
+valid_acc_pp 0.6537484049528643
+valid_loss_pp 3.1497911049769476
+-saving model-
+
+Train_Epoch: 48
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9943244312329071
+train_acc_cls 0.9943244313432179
+train_loss_cls 0.016092379806126312
+
+
+train_weighted_f1_mlm 0.9438010365209718
+train_acc_mlm 0.9438133441739776
+train_loss_mlm 0.19985432562299152
+
+
+train_weighted_f1_pp 0.9084453601053318
+train_acc_pp 0.9084488340141177
+train_loss_pp 0.3265006418938562
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 48
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7795905171650336
+valid_acc_cls 0.7797619047619048
+valid_loss_cls 1.2416704891297297
+
+
+valid_weighted_f1_mlm 0.2637998778493815
+valid_acc_mlm 0.28256091734352606
+valid_loss_mlm 8.733558906652988
+
+
+valid_weighted_f1_pp 0.6450956386616226
+valid_acc_pp 0.6533807929814391
+valid_loss_pp 3.18367417042072
+-saving model-
+
+Train_Epoch: 49
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9952232194184046
+train_acc_cls 0.9952232201781236
+train_loss_cls 0.013658367289286646
+
+
+train_weighted_f1_mlm 0.945279487865283
+train_acc_mlm 0.9452955711000426
+train_loss_mlm 0.19442982478359488
+
+
+train_weighted_f1_pp 0.9105715374729944
+train_acc_pp 0.9105754389198554
+train_loss_pp 0.3179882030307719
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 49
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7757726029691931
+valid_acc_cls 0.7759009009009009
+valid_loss_cls 1.2479268699884414
+
+
+valid_weighted_f1_mlm 0.26243280882904546
+valid_acc_mlm 0.2806115623506928
+valid_loss_mlm 8.761867134387677
+
+
+valid_weighted_f1_pp 0.6443556173599522
+valid_acc_pp 0.6526243606556218
+valid_loss_pp 3.1891374013362785
+-saving model-
+
+Train_Epoch: 50
+100%|███████████████████████████████████████| 4972/4972 [52:41<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9954494883886047
+train_acc_cls 0.9954494886960019
+train_loss_cls 0.013427365087257444
+
+
+train_weighted_f1_mlm 0.9475582592305188
+train_acc_mlm 0.9475724015101156
+train_loss_mlm 0.18661421629332745
+
+
+train_weighted_f1_pp 0.9123425100386818
+train_acc_pp 0.9123440423843169
+train_loss_pp 0.3105867074312506
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 50
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7809071838332714
+valid_acc_cls 0.7823359073359073
+valid_loss_cls 1.3140356372564266
+
+
+valid_weighted_f1_mlm 0.26358083885463424
+valid_acc_mlm 0.2822169135212613
+valid_loss_mlm 8.784903460282546
+
+
+valid_weighted_f1_pp 0.6453799041903551
+valid_acc_pp 0.6539746277045106
+valid_loss_pp 3.202093387261415
+-saving model-
+
+Train_Epoch: 51
+100%|███████████████████████████████████████| 4972/4972 [52:40<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.99564433008275
+train_acc_cls 0.9956443310308416
+train_loss_cls 0.01308084627899504
+
+
+train_weighted_f1_mlm 0.9493783407881828
+train_acc_mlm 0.9493962267770307
+train_loss_mlm 0.1806748126118728
+
+
+train_weighted_f1_pp 0.9145442413048611
+train_acc_pp 0.9145444015854584
+train_loss_pp 0.3025853195657005
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 51
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7860430136830631
+valid_acc_cls 0.786036036036036
+valid_loss_cls 1.2337256674583141
+
+
+valid_weighted_f1_mlm 0.2638878288727076
+valid_acc_mlm 0.2821213569039656
+valid_loss_mlm 8.79855278699826
+
+
+valid_weighted_f1_pp 0.6468669205041493
+valid_acc_pp 0.6551729013421371
+valid_loss_pp 3.204884427633041
+-saving model-
+
+Train_Epoch: 52
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9953049285600583
+train_acc_cls 0.9953049282540242
+train_loss_cls 0.013937992734431685
+
+
+train_weighted_f1_mlm 0.9510658794154062
+train_acc_mlm 0.9510769201257495
+train_loss_mlm 0.17521202175301812
+
+
+train_weighted_f1_pp 0.9162141053735549
+train_acc_pp 0.9162149840917029
+train_loss_pp 0.29533244156648053
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 52
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7939138285406941
+valid_acc_cls 0.7940797940797941
+valid_loss_cls 1.227180316967842
+
+
+valid_weighted_f1_mlm 0.2625087022957356
+valid_acc_mlm 0.28252269469660773
+valid_loss_mlm 8.834869663531963
+
+
+valid_weighted_f1_pp 0.6445055034193018
+valid_acc_pp 0.6531510354992983
+valid_loss_pp 3.2233929524054896
+-saving model-
+
+Train_Epoch: 53
+100%|███████████████████████████████████████| 4972/4972 [52:39<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9956506154320645
+train_acc_cls 0.9956506162674494
+train_loss_cls 0.012566634122963797
+
+
+train_weighted_f1_mlm 0.9525000772195865
+train_acc_mlm 0.9525111904812847
+train_loss_mlm 0.17035395992142077
+
+
+train_weighted_f1_pp 0.9178401521483728
+train_acc_pp 0.9178423501254096
+train_loss_pp 0.2891023878760378
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 53
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.77816031324322
+valid_acc_cls 0.7781531531531531
+valid_loss_cls 1.2855095144265738
+
+
+valid_weighted_f1_mlm 0.26303324487677715
+valid_acc_mlm 0.28244624940277113
+valid_loss_mlm 8.852429443750626
+
+
+valid_weighted_f1_pp 0.6461956197059102
+valid_acc_pp 0.6548759839806014
+valid_loss_pp 3.2365578822600534
+-saving model-
+
+Train_Epoch: 54
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9957637505263885
+train_acc_cls 0.9957637505263885
+train_loss_cls 0.012381403263570139
+
+
+train_weighted_f1_mlm 0.9538972527085023
+train_acc_mlm 0.9539129979275384
+train_loss_mlm 0.16487044059729153
+
+
+train_weighted_f1_pp 0.9198738997377456
+train_acc_pp 0.9198713430616294
+train_loss_pp 0.28158510586341257
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 54
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7819092769894956
+valid_acc_cls 0.782014157014157
+valid_loss_cls 1.2772269469715702
+
+
+valid_weighted_f1_mlm 0.26261189906925914
+valid_acc_mlm 0.282809364548495
+valid_loss_mlm 8.858503884535569
+
+
+valid_weighted_f1_pp 0.6470230946221319
+valid_acc_pp 0.6549643522429632
+valid_loss_pp 3.221563976238935
+-saving model-
+
+Train_Epoch: 55
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9960591563524054
+train_acc_cls 0.996059156646952
+train_loss_cls 0.011502005877058229
+
+
+train_weighted_f1_mlm 0.9554124704025846
+train_acc_mlm 0.9554225232091357
+train_loss_mlm 0.15964583163872684
+
+
+train_weighted_f1_pp 0.9215235391723675
+train_acc_pp 0.9215237937355474
+train_loss_pp 0.27481838811731396
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 55
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7858941275333804
+valid_acc_cls 0.786036036036036
+valid_loss_cls 1.3179278899748357
+
+
+valid_weighted_f1_mlm 0.26320884470544914
+valid_acc_mlm 0.28399426660296223
+valid_loss_mlm 8.89359588133983
+
+
+valid_weighted_f1_pp 0.6446641812577908
+valid_acc_pp 0.6531687091517707
+valid_loss_pp 3.2545334363595035
+-saving model-
+
+Train_Epoch: 56
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9958580282449417
+train_acc_cls 0.9958580290755046
+train_loss_cls 0.012014424144494081
+
+
+train_weighted_f1_mlm 0.9571824349843934
+train_acc_mlm 0.9571969163187356
+train_loss_mlm 0.15395437373329413
+
+
+train_weighted_f1_pp 0.9229033359771869
+train_acc_pp 0.9229018129923713
+train_loss_pp 0.2693807000979146
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 56
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.788612205348525
+valid_acc_cls 0.7886100386100386
+valid_loss_cls 1.2997736748212423
+
+
+valid_weighted_f1_mlm 0.26257398324242404
+valid_acc_mlm 0.28128045867176305
+valid_loss_mlm 8.871386332389635
+
+
+valid_weighted_f1_pp 0.64658486942178
+valid_acc_pp 0.6548194282926898
+valid_loss_pp 3.252438652821076
+-saving model-
+
+Train_Epoch: 57
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9966311126964867
+train_acc_cls 0.9966311131782556
+train_loss_cls 0.010109967763113408
+
+
+train_weighted_f1_mlm 0.9582434232440284
+train_acc_mlm 0.9582586010109245
+train_loss_mlm 0.1495627469757058
+
+
+train_weighted_f1_pp 0.9247734743213419
+train_acc_pp 0.9247723909724742
+train_loss_pp 0.2620684009521888
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 57
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7866513481486092
+valid_acc_cls 0.7866795366795367
+valid_loss_cls 1.347546194990476
+
+
+valid_weighted_f1_mlm 0.26247063344294613
+valid_acc_mlm 0.2805924510272336
+valid_loss_mlm 8.90716552734375
+
+
+valid_weighted_f1_pp 0.6462840491130697
+valid_acc_pp 0.6543493091369249
+valid_loss_pp 3.271566487581302
+-saving model-
+
+Train_Epoch: 58
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9965808305114329
+train_acc_cls 0.9965808312853938
+train_loss_cls 0.010073328858427169
+
+
+train_weighted_f1_mlm 0.9595128929574286
+train_acc_mlm 0.9595253922663021
+train_loss_mlm 0.14530722600762294
+
+
+train_weighted_f1_pp 0.9264416725017689
+train_acc_pp 0.9264420191717543
+train_loss_pp 0.25626619793744404
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 58
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7844318151305866
+valid_acc_cls 0.7844272844272844
+valid_loss_cls 1.3302083915624863
+
+
+valid_weighted_f1_mlm 0.2626477838739886
+valid_acc_mlm 0.28275203057811754
+valid_loss_mlm 8.930938449272743
+
+
+valid_weighted_f1_pp 0.6458139518992939
+valid_acc_pp 0.6546532959594495
+valid_loss_pp 3.280740673114092
+-saving model-
+
+Train_Epoch: 59
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9964991223863344
+train_acc_cls 0.9964991232094932
+train_loss_cls 0.009962903612027165
+
+
+train_weighted_f1_mlm 0.9609273567142502
+train_acc_mlm 0.9609412177870182
+train_loss_mlm 0.1404797746211722
+
+
+train_weighted_f1_pp 0.9279508220832569
+train_acc_pp 0.9279484608800946
+train_loss_pp 0.2503891687807256
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 59
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7845712710644194
+valid_acc_cls 0.7849099099099099
+valid_loss_cls 1.3739054524745697
+
+
+valid_weighted_f1_mlm 0.2623608342390791
+valid_acc_mlm 0.28120401337792644
+valid_loss_mlm 8.945871311578996
+
+
+valid_weighted_f1_pp 0.6463346418805704
+valid_acc_pp 0.6544730247042314
+valid_loss_pp 3.2829569241939445
+-saving model-
+
+Train_Epoch: 60
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9968133848017056
+train_acc_cls 0.9968133850398798
+train_loss_cls 0.009350821528434904
+
+
+train_weighted_f1_mlm 0.9622056612008807
+train_acc_mlm 0.962216862563109
+train_loss_mlm 0.13662571223244394
+
+
+train_weighted_f1_pp 0.9294849448400972
+train_acc_pp 0.9294836681269381
+train_loss_pp 0.24466361686563357
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 60
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7816595856666265
+valid_acc_cls 0.782014157014157
+valid_loss_cls 1.3853279967338612
+
+
+valid_weighted_f1_mlm 0.26309508817343885
+valid_acc_mlm 0.28229335881509793
+valid_loss_mlm 8.95964682896932
+
+
+valid_weighted_f1_pp 0.644868629600752
+valid_acc_pp 0.6533454456764944
+valid_loss_pp 3.300793604973035
+-saving model-
+
+Train_Epoch: 61
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9966751095860006
+train_acc_cls 0.9966751098345097
+train_loss_cls 0.00957187872121208
+
+
+train_weighted_f1_mlm 0.9631733202572461
+train_acc_mlm 0.963184109701024
+train_loss_mlm 0.13255268920284913
+
+
+train_weighted_f1_pp 0.9307869173592258
+train_acc_pp 0.9307842521900663
+train_loss_pp 0.24014870495754964
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 61
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7869748915593906
+valid_acc_cls 0.787001287001287
+valid_loss_cls 1.309058161309132
+
+
+valid_weighted_f1_mlm 0.2632789931756536
+valid_acc_mlm 0.28357381748686095
+valid_loss_mlm 8.977592952434833
+
+
+valid_weighted_f1_pp 0.6458367471394625
+valid_acc_pp 0.654723990569339
+valid_loss_pp 3.306874398696117
+-saving model-
+
+Train_Epoch: 62
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9969768014214625
+train_acc_cls 0.9969768011916809
+train_loss_cls 0.008705496163511297
+
+
+train_weighted_f1_mlm 0.9642427948879635
+train_acc_mlm 0.9642568612941044
+train_loss_mlm 0.1290484475427437
+
+
+train_weighted_f1_pp 0.9324431900370167
+train_acc_pp 0.932439565784878
+train_loss_pp 0.23398502016992984
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 62
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7837651555724325
+valid_acc_cls 0.7837837837837838
+valid_loss_cls 1.3376255492751414
+
+
+valid_weighted_f1_mlm 0.2636034607184559
+valid_acc_mlm 0.2825418060200669
+valid_loss_mlm 8.983002107571332
+
+
+valid_weighted_f1_pp 0.645960098443988
+valid_acc_pp 0.6545048372786817
+valid_loss_pp 3.3017236990806382
+-saving model-
+
+Train_Epoch: 63
+100%|███████████████████████████████████████| 4972/4972 [52:38<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9973350594597679
+train_acc_cls 0.9973350596783216
+train_loss_cls 0.007830718044330918
+
+
+train_weighted_f1_mlm 0.9655933209493364
+train_acc_mlm 0.9656062854094717
+train_loss_mlm 0.12416733707183686
+
+
+train_weighted_f1_pp 0.9337378867945203
+train_acc_pp 0.9337344240062188
+train_loss_pp 0.2289643749318963
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 63
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7862826065381782
+valid_acc_cls 0.7863577863577863
+valid_loss_cls 1.3885576694057538
+
+
+valid_weighted_f1_mlm 0.26157224545778124
+valid_acc_mlm 0.2796942188246536
+valid_loss_mlm 8.972734170082289
+
+
+valid_weighted_f1_pp 0.6462646368632732
+valid_acc_pp 0.6545401845836264
+valid_loss_pp 3.310228984783857
+-saving model-
+
+Train_Epoch: 64
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9969139484086642
+train_acc_cls 0.9969139488256036
+train_loss_cls 0.008370089069568772
+
+
+train_weighted_f1_mlm 0.9667292324682795
+train_acc_mlm 0.9667410116475443
+train_loss_mlm 0.12081435583127259
+
+
+train_weighted_f1_pp 0.9351476713589167
+train_acc_pp 0.9351443443815722
+train_loss_pp 0.22398390939529633
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 64
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.25it/s]
+valid_weighted_f1_cls 0.7882805719265805
+valid_acc_cls 0.7882882882882883
+valid_loss_cls 1.3072404835277642
+
+
+valid_weighted_f1_mlm 0.26357444854256185
+valid_acc_mlm 0.2821213569039656
+valid_loss_mlm 9.00558591011243
+
+
+valid_weighted_f1_pp 0.6463852501955709
+valid_acc_pp 0.654663900150933
+valid_loss_pp 3.330006403800769
+-saving model-
+
+Train_Epoch: 65
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9973727711631462
+train_acc_cls 0.997372771097968
+train_loss_cls 0.007386169141131503
+
+
+train_weighted_f1_mlm 0.9674205342837455
+train_acc_mlm 0.9674330618499579
+train_loss_mlm 0.11796997997337354
+
+
+train_weighted_f1_pp 0.9365928869675558
+train_acc_pp 0.9365914827285435
+train_loss_pp 0.218766029093981
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 65
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7876777485297053
+valid_acc_cls 0.7879665379665379
+valid_loss_cls 1.3549104643252623
+
+
+valid_weighted_f1_mlm 0.26268456734466605
+valid_acc_mlm 0.28313425704730055
+valid_loss_mlm 9.010300254821777
+
+
+valid_weighted_f1_pp 0.6458048807289565
+valid_acc_pp 0.6545507887751099
+valid_loss_pp 3.335951235355475
+-saving model-
+
+Train_Epoch: 66
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9972659219103848
+train_acc_cls 0.9972659220756366
+train_loss_cls 0.008098074833320316
+
+
+train_weighted_f1_mlm 0.9684287642561218
+train_acc_mlm 0.9684401498310822
+train_loss_mlm 0.11443318290094982
+
+
+train_weighted_f1_pp 0.9377882219284964
+train_acc_pp 0.937784775422942
+train_loss_pp 0.21437080765827854
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 66
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7848749876039152
+valid_acc_cls 0.7849099099099099
+valid_loss_cls 1.3148902635257214
+
+
+valid_weighted_f1_mlm 0.2637710283529701
+valid_acc_mlm 0.28426182513139037
+valid_loss_mlm 9.024386667593932
+
+
+valid_weighted_f1_pp 0.6464128110311452
+valid_acc_pp 0.6550138384698858
+valid_loss_pp 3.3352819149310773
+-saving model-
+
+Train_Epoch: 67
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9977058887088669
+train_acc_cls 0.9977058886381778
+train_loss_cls 0.006458914135466157
+
+
+train_weighted_f1_mlm 0.9696331366182798
+train_acc_mlm 0.9696420152678965
+train_loss_mlm 0.11110688909687468
+
+
+train_weighted_f1_pp 0.9391137154661919
+train_acc_pp 0.9391105804558479
+train_loss_pp 0.20967644261539414
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 67
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7889178667210704
+valid_acc_cls 0.788931788931789
+valid_loss_cls 1.3760690867900849
+
+
+valid_weighted_f1_mlm 0.2630523914960618
+valid_acc_mlm 0.2833444816053512
+valid_loss_mlm 9.051916900047889
+
+
+valid_weighted_f1_pp 0.6446849689687691
+valid_acc_pp 0.6536105504635799
+valid_loss_pp 3.3633059318249043
+-saving model-
+
+Train_Epoch: 68
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9980578619709178
+train_acc_cls 0.9980578618882108
+train_loss_cls 0.005649287280214558
+
+
+train_weighted_f1_mlm 0.9707880101602296
+train_acc_mlm 0.9707981375143593
+train_loss_mlm 0.10668826179671807
+
+
+train_weighted_f1_pp 0.940411722009822
+train_acc_pp 0.9404089832459143
+train_loss_pp 0.20483868512791775
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 68
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7906595305087777
+valid_acc_cls 0.7907014157014157
+valid_loss_cls 1.4078464763668868
+
+
+valid_weighted_f1_mlm 0.2632205619049911
+valid_acc_mlm 0.2836884854276159
+valid_loss_mlm 9.047562924409524
+
+
+valid_weighted_f1_pp 0.6462346021989686
+valid_acc_pp 0.6549749564344467
+valid_loss_pp 3.352632938287197
+-saving model-
+
+Train_Epoch: 69
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9978881604162086
+train_acc_cls 0.997888160499802
+train_loss_cls 0.00623364235505228
+
+
+train_weighted_f1_mlm 0.9718640434029332
+train_acc_mlm 0.971876053661189
+train_loss_mlm 0.10296516239977264
+
+
+train_weighted_f1_pp 0.9415901482679097
+train_acc_pp 0.9415863253810479
+train_loss_pp 0.20046741047863603
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 69
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7881344705081046
+valid_acc_cls 0.7881274131274131
+valid_loss_cls 1.382020644385081
+
+
+valid_weighted_f1_mlm 0.26411534775316925
+valid_acc_mlm 0.28441471571906357
+valid_loss_mlm 9.052024640792455
+
+
+valid_weighted_f1_pp 0.6468398401034475
+valid_acc_pp 0.6554839576256508
+valid_loss_pp 3.3610821467179517
+-saving model-
+
+Train_Epoch: 70
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9981269993372895
+train_acc_cls 0.9981269994908958
+train_loss_cls 0.005594535707021755
+
+
+train_weighted_f1_mlm 0.9727138382356132
+train_acc_mlm 0.9727252538562616
+train_loss_mlm 0.10007309126768828
+
+
+train_weighted_f1_pp 0.9426468733599064
+train_acc_pp 0.9426439701569126
+train_loss_pp 0.19682272380234395
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 70
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.781785393704648
+valid_acc_cls 0.782979407979408
+valid_loss_cls 1.5109571654063005
+
+
+valid_weighted_f1_mlm 0.26445630812266646
+valid_acc_mlm 0.2839751552795031
+valid_loss_mlm 9.047380975576548
+
+
+valid_weighted_f1_pp 0.645456955238674
+valid_acc_pp 0.6542220588391238
+valid_loss_pp 3.3728314778743647
+-saving model-
+
+Train_Epoch: 71
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9982087075553326
+train_acc_cls 0.9982087075667964
+train_loss_cls 0.005586776376517364
+
+
+train_weighted_f1_mlm 0.9731690553919965
+train_acc_mlm 0.9731789967928122
+train_loss_mlm 0.09804423413016891
+
+
+train_weighted_f1_pp 0.9438130640345639
+train_acc_pp 0.9438101332676043
+train_loss_pp 0.19218250657772692
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 71
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7849365523238526
+valid_acc_cls 0.7852316602316602
+valid_loss_cls 1.463076111062979
+
+
+valid_weighted_f1_mlm 0.2643481498410413
+valid_acc_mlm 0.28332537028189203
+valid_loss_mlm 9.068329390501365
+
+
+valid_weighted_f1_pp 0.6467990255691565
+valid_acc_pp 0.655455679781695
+valid_loss_pp 3.3713256615858813
+-saving model-
+
+Train_Epoch: 72
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9979761539330355
+train_acc_cls 0.9979761538123103
+train_loss_cls 0.005961193083286619
+
+
+train_weighted_f1_mlm 0.974381179002766
+train_acc_mlm 0.9743941425106961
+train_loss_mlm 0.09489105289617639
+
+
+train_weighted_f1_pp 0.945096151015995
+train_acc_pp 0.9450927218279722
+train_loss_pp 0.18769487211584135
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 72
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7849924125289639
+valid_acc_cls 0.7850707850707851
+valid_loss_cls 1.3828805123766263
+
+
+valid_weighted_f1_mlm 0.2644914199868928
+valid_acc_mlm 0.28540850453893934
+valid_loss_mlm 9.06454216394669
+
+
+valid_weighted_f1_pp 0.647204170772599
+valid_acc_pp 0.6559293336679545
+valid_loss_pp 3.380516494848789
+-saving model-
+
+Train_Epoch: 73
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9984286906480665
+train_acc_cls 0.998428690848067
+train_loss_cls 0.004631375778825276
+
+
+train_weighted_f1_mlm 0.974890683582171
+train_acc_mlm 0.974903219951704
+train_loss_mlm 0.09295944816433642
+
+
+train_weighted_f1_pp 0.9460532381121822
+train_acc_pp 0.9460481194290626
+train_loss_pp 0.18449614983432636
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 73
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7895664652645319
+valid_acc_cls 0.7895752895752896
+valid_loss_cls 1.4586891006200742
+
+
+valid_weighted_f1_mlm 0.2636744712662459
+valid_acc_mlm 0.2837458193979933
+valid_loss_mlm 9.077010890765068
+
+
+valid_weighted_f1_pp 0.6473216657181292
+valid_acc_pp 0.6557632013347142
+valid_loss_pp 3.370913594808334
+-saving model-
+
+Train_Epoch: 74
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.998604677358652
+train_acc_cls 0.9986046774730835
+train_loss_cls 0.0041103476203660835
+
+
+train_weighted_f1_mlm 0.9757184988067644
+train_acc_mlm 0.9757310241383864
+train_loss_mlm 0.09011794612064886
+
+
+train_weighted_f1_pp 0.9473332356152554
+train_acc_pp 0.9473296173528997
+train_loss_pp 0.1807536447685952
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 74
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7897403386149621
+valid_acc_cls 0.7897361647361647
+valid_loss_cls 1.4514734989557512
+
+
+valid_weighted_f1_mlm 0.2649666912409879
+valid_acc_mlm 0.2840516005733397
+valid_loss_mlm 9.060152699397161
+
+
+valid_weighted_f1_pp 0.6475707034152566
+valid_acc_pp 0.6559964935473495
+valid_loss_pp 3.374575122197469
+-saving model-
+
+Train_Epoch: 75
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9984475462727124
+train_acc_cls 0.9984475465578901
+train_loss_cls 0.005024975283088876
+
+
+train_weighted_f1_mlm 0.9765507628282534
+train_acc_mlm 0.9765595661184616
+train_loss_mlm 0.08698067346839526
+
+
+train_weighted_f1_pp 0.948083128555683
+train_acc_pp 0.9480801116157426
+train_loss_pp 0.17732162014015576
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 75
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7927863348756169
+valid_acc_cls 0.7927927927927928
+valid_loss_cls 1.429326948714562
+
+
+valid_weighted_f1_mlm 0.2651228784859792
+valid_acc_mlm 0.28510272336359294
+valid_loss_mlm 9.077521307040483
+
+
+valid_weighted_f1_pp 0.6475182869518634
+valid_acc_pp 0.656067188157239
+valid_loss_pp 3.3855201782324373
+-saving model-
+
+Train_Epoch: 76
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9986172479970998
+train_acc_cls 0.9986172479462989
+train_loss_cls 0.0039632582325871525
+
+
+train_weighted_f1_mlm 0.9772386252479478
+train_acc_mlm 0.977249402940697
+train_loss_mlm 0.08470075886714559
+
+
+train_weighted_f1_pp 0.94929237336697
+train_acc_pp 0.9492878552441758
+train_loss_pp 0.17314298419927698
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 76
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7919953888806205
+valid_acc_cls 0.791988416988417
+valid_loss_cls 1.425349549146799
+
+
+valid_weighted_f1_mlm 0.26418124708404345
+valid_acc_mlm 0.28433827042522697
+valid_loss_mlm 9.090343066973563
+
+
+valid_weighted_f1_pp 0.647351813844154
+valid_acc_pp 0.6559717504338882
+valid_loss_pp 3.3868425369262694
+-saving model-
+
+Train_Epoch: 77
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.58it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9986801002041303
+train_acc_cls 0.9986801003123763
+train_loss_cls 0.004138185787047436
+
+
+train_weighted_f1_mlm 0.9780438725109074
+train_acc_mlm 0.9780543355322036
+train_loss_mlm 0.08218312564576442
+
+
+train_weighted_f1_pp 0.9501266532258908
+train_acc_pp 0.9501226011790326
+train_loss_pp 0.17048874443317505
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 77
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7926382237891021
+valid_acc_cls 0.7926319176319176
+valid_loss_cls 1.4055625612919147
+
+
+valid_weighted_f1_mlm 0.26464821296108326
+valid_acc_mlm 0.2844338270425227
+valid_loss_mlm 9.083778765262702
+
+
+valid_weighted_f1_pp 0.6470465440143293
+valid_acc_pp 0.655858639058065
+valid_loss_pp 3.3954696863125533
+-saving model-
+
+Train_Epoch: 78
+100%|███████████████████████████████████████| 4972/4972 [52:37<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9990195030765665
+train_acc_cls 0.9990195030891937
+train_loss_cls 0.00289543068618722
+
+
+train_weighted_f1_mlm 0.9787541592047616
+train_acc_mlm 0.9787663061562218
+train_loss_mlm 0.07923023581163162
+
+
+train_weighted_f1_pp 0.9510125487118026
+train_acc_pp 0.9510091523491084
+train_loss_pp 0.16733388457078657
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 78
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.7931569998008728
+valid_acc_cls 0.7932754182754183
+valid_loss_cls 1.5088713920078216
+
+
+valid_weighted_f1_mlm 0.26444131040034174
+valid_acc_mlm 0.2838413760152891
+valid_loss_mlm 9.077567010048108
+
+
+valid_weighted_f1_pp 0.6474479797373309
+valid_acc_pp 0.6559293336679545
+valid_loss_pp 3.39127717873989
+-saving model-
+
+Train_Epoch: 79
+100%|███████████████████████████████████████| 4972/4972 [52:36<00:00,  1.57it/s]
+------------------TRAIN---------------------------
+train_weighted_f1_cls 0.9988183755470611
+train_acc_cls 0.9988183755177463
+train_loss_cls 0.0034656866382571623
+
+
+train_weighted_f1_mlm 0.9792162400378058
+train_acc_mlm 0.9792259514399144
+train_loss_mlm 0.07783819392940879
+
+
+train_weighted_f1_pp 0.9520533400776376
+train_acc_pp 0.9520515282135401
+train_loss_pp 0.1637691356052891
+------------------VALIDATION---------------------------
+
+Valid_Epoch: 79
+100%|█████████████████████████████████████████| 195/195 [00:45<00:00,  4.26it/s]
+valid_weighted_f1_cls 0.795284096440189
+valid_acc_cls 0.7953667953667953
+valid_loss_cls 1.4592156080099252
+
+
+valid_weighted_f1_mlm 0.2647530113526312
+valid_acc_mlm 0.2847204968944099
+valid_loss_mlm 9.09271155137282
+
+
+valid_weighted_f1_pp 0.647532642186966
+valid_acc_pp 0.6564171264761918
+valid_loss_pp 3.4104054683294054
+-saving model-
+
+Train_Epoch: 80
+ 32%|████████████▌                          | 1604/4972 [16:58<35:38,  1.57it/s]
+Traceback (most recent call last):
+  File "/cluster/pytorchic-bert/train.py", line 312, in <module>
+    _, score = train_val(train_data, valid_data, model_path, None, None)
+  File "/cluster/pytorchic-bert/train.py", line 206, in train_val
+    losses_cls, losses_mlm, losses_pp, l_cls, p_cls, l_mlm, p_mlm, l_pp, p_pp = training(bert_tiny, optimizer, schedular, criterion_cls,criterion_mlm,criterion_pp, train_iter, epoch)
+  File "/cluster/pytorchic-bert/train.py", line 84, in training
+    losses_pp.append(loss_pp.item())
+KeyboardInterrupt
+^C
+Process finished with exit code 130 (interrupted by signal 2: SIGINT)

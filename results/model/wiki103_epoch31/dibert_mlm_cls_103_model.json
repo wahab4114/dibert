@@ -1,0 +1,1 @@
+{"vocab_size": 30522, "hidden_size": 768, "num_hidden_layers": 8, "num_attention_heads": 8, "intermediate_size": 3072, "max_len": 312, "n_segments": 2, "attention_probs_dropout_prob": 0.1}
