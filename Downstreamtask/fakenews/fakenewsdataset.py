@@ -45,7 +45,7 @@ class FakeNewsDataset(Dataset):
 if __name__ == '__main__':
     train_file = 'data/train.csv'
     test_file = 'data/test.csv'
-    valid_file = 'data/dev.csv'
+    valid_file = 'data/valid.csv'
     data = FakeNewsDataset(train_file)
     print(len(data))
     print(data[0])

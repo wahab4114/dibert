@@ -128,7 +128,7 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
 
         if(trial is None and best_params is not None):
             print('-saving model-')
-            torch.save(model, 'results/full_text/dibert_mlm_cls_full_text_103_10_seed_'+str(0)+'_epoch_'+str(epoch+1)+'.tar')
+            torch.save(model, 'results/full_text/dibert_fakenews_mlm_cls_full_text_103_10_seed_'+str(0)+'_epoch_'+str(epoch+1)+'.tar')
 
     return valid_acc, score # tuning according to the last best validation accuracy
     #return sum(score.valid_acc)/len(score.valid_acc), score
@@ -163,10 +163,10 @@ def start_tuning(train_data, valid_data, model_path:str ,param_path:str, sampler
     return best_params, study.best_trial
 
 if __name__ == '__main__':
-    param_path = 'results/full_text/params/dibert_mlm_cls_pprediction_full_text.json'
+    param_path = 'results/full_text/params/dibert_fakenews_mlm_cls_full_text.json'
     model_path = 'results/dibert_imdb_mlm_cls_pp_29_seed_'+str(0)+'.tar'
 
-    is_tune = False
+    is_tune = True
     #np.random.seed(imdbConfig.seed_3)
     #torch.manual_seed(imdbConfig.seed_3)
     #random.seed(imdbConfig.seed_3)
@@ -176,7 +176,7 @@ if __name__ == '__main__':
 
     train_file = 'data/train.csv'
     test_file = 'data/test.csv'
-    valid_file = 'data/dev.csv'
+    valid_file = 'data/valid.csv'
 
     train_data = FakeNewsDataset(train_file)
     valid_data = FakeNewsDataset(valid_file)
