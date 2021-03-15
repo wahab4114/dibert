@@ -1,5 +1,5 @@
 import torch.nn as nn
-from Downstreamtask.fakenews.configfakenews import fakenewsConfig
+from Downstreamtask.MRPC.mprcconfig import mrpcConfig
 from model import dibert
 
 class ClassificationHead(nn.Module):
@@ -14,14 +14,14 @@ class ClassificationHead(nn.Module):
         return x
 
 
-class Bert_fakenews(nn.Module): #for checking sota results
-    def __init__(self, pretrained_model, hidden_out = fakenewsConfig.hidden_model_out, seq_len = fakenewsConfig.seq_len, drop_out = fakenewsConfig.drop_out):
+class Bert_mrpc(nn.Module):
+    def __init__(self, pretrained_model, hidden_out = mrpcConfig.hidden_model_out, seq_len = mrpcConfig.seq_len, drop_out = mrpcConfig.drop_out):
         super().__init__()
         self.pretrained_model = pretrained_model
         self.hidden = hidden_out
         self.cls_layer = ClassificationHead(self.hidden, drop_out)
 
-    def forward(self, input_ids, attention_mask):
-        o1, o2 = self.pretrained_model.bert(input_ids, attention_mask)
+    def forward(self, input_ids, attention_mask, token_type_ids):
+        o1, o2 = self.pretrained_model.bert(input_ids, attention_mask, token_type_ids)
         out_cls = self.cls_layer(o2)
         return out_cls
