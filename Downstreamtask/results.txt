@@ -28,3 +28,9 @@ bert-base (test_acc) = 0.82280130293
 dibert (test_acc) = 0.8223941368
 bert-base (weighted_f1) = 82274750574
 dibert (weighted_f1) = 0.82237188969
+
+MRPC: GlueDataset
+bert-base (test_acc) = 70.78
+dibert (test_acc) = 71
+bert-base (weighted_f1) = 80.44
+dibert (weighted_f1) = 80.44
