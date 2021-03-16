@@ -35,8 +35,8 @@ def testing(test_iter, model):
 
 def main():
 
-    model_path = 'results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_1_epoch_8.tar'
-    tsv_file = "results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_1_epoch_8.tsv"
+    model_path = 'results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_2_epoch_9.tar'
+    tsv_file = "results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_2_epoch_9.tsv"
     test_data = MRPCdataset('test')
     print(len(test_data))
     mprc_bert = torch.load(model_path)
