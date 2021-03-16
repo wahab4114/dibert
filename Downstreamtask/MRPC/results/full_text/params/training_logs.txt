@@ -12,3 +12,8 @@ results/full_text/dibert_MRPC_mlm_cls_103_10_seed_2_epoch_10.tar
 80.3/71.4
 results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_2_epoch_9.tar
 81.3/72.2
+
+results/full_text/dibert_MRPC_mlm_cls_103_10_seed_3_epoch_6.tar
+80.3/70.4
+results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_3_epoch_6.tar
+80.7/70.8
