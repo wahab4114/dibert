@@ -17,3 +17,16 @@ results/full_text/dibert_MRPC_mlm_cls_103_10_seed_3_epoch_6.tar
 80.3/70.4
 results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_3_epoch_6.tar
 80.7/70.8
+
+results/full_text/dibert_MRPC_mlm_cls_103_10_seed_4_epoch_9.tar
+80.7/71.3
+results/full_text/dibert_MRPC_mlm_cls_pprediction_103_10_seed_4_epoch_9.tar
+79.4/69.7
+
+bert-base:
+acc:(70.8+70.0+71.4+70.4+71.3)/5 = 70.78
+f1: (80.6+80.3+80.3+80.3+80.7)/5 = 80.44
+
+dibert
+acc:(70.5+71.8+72.2+70.8+69.7)/5 = 71
+f1: (79.6+81.2+81.3+80.7+79.4)/5 = 80.44
