@@ -35,16 +35,17 @@ def testing(test_iter, model):
 
 def main():
 
-    model_path = 'results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_4_epoch_7.tar'
-    tsv_file = "results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_4_epoch_7.tsv"
+    model_path = 'results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_0_epoch_11.tar'
+    tsv_file = "results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_0_epoch_11.tsv"
     test_data = QNLIdataset('test')
     print(len(test_data))
     qnli_bert = torch.load(model_path)
     test_iter = DataLoader(test_data, batch_size=qnliConfig.batch_size, shuffle=False)
     preds = testing(test_iter, qnli_bert)
     print(len(preds))
+    string_preds = ['entailment' if pred == 0 else 'not_entailment' for pred in preds]
     idx = [i for i in range(len(preds))]
-    result = {'index': idx, 'prediction': preds}
+    result = {'index': idx, 'prediction': string_preds}
     pd.DataFrame(result).to_csv(tsv_file, index=False, sep='\t')
 
 
