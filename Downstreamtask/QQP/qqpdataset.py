@@ -28,7 +28,7 @@ class QQPdataset(Dataset):
         return dataset['question1'], dataset['question2'], dataset['label']
 
 if __name__ == '__main__':
-    split_name = 'test'
+    split_name = 'validation'
     data = QQPdataset(split_name)
     print(len(data))
     print(data[0])

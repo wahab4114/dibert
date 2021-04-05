@@ -138,7 +138,7 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
 
         if(trial is None and best_params is not None):
             print('-saving model-')
-            torch.save(model, 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_'+str(4)+'_epoch_'+str(epoch+1)+'.tar')
+            torch.save(model, 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_'+str(1)+'_epoch_'+str(epoch+1)+'.tar')
 
     return valid_acc, score # tuning according to the last best validation accuracy
     #return sum(score.valid_acc)/len(score.valid_acc), score
@@ -187,11 +187,12 @@ if __name__ == '__main__':
 
     device = torch.device("cuda:0")
 
-    train_path = 'data/train.csv'
-    test_path = 'data/test.csv'
-    val_path = 'data/val.csv'
-    train_data = SstDataset(train_path)
-    valid_data = SstDataset(val_path)
+    train_data = SstDataset('train')
+    valid_data = SstDataset('validation')
+    test_data = SstDataset('test')
+    print(len(train_data))
+    print(len(valid_data))
+    print(len(test_data))
 
     if(is_tune == False):
         best_params = load_json(param_path)

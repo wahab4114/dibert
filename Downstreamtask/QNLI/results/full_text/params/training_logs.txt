@@ -3,3 +3,29 @@ results/full_text/dibert_QNLI_mlm_cls_103_10_seed_0_epoch_11.tar
 results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_0_epoch_11.tar
 76.2
 
+results/full_text/dibert_QNLI_mlm_cls_103_10_seed_1_epoch_5.tar
+74.5
+results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_1_epoch_11.tar
+76.8
+
+results/full_text/dibert_QNLI_mlm_cls_103_10_seed_2_epoch_11.tar
+74.4
+results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_2_epoch_7.tar
+76.7
+
+results/full_text/dibert_QNLI_mlm_cls_103_10_seed_3_epoch_7.tar
+74.7
+results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_3_epoch_5.tar
+77.2
+
+results/full_text/dibert_QNLI_mlm_cls_103_10_seed_4_epoch_11.tar
+74.8
+results/full_text/dibert_QNLI_mlm_cls_pprediction_103_10_seed_4_epoch_9.tar
+76.9
+
+bert-base:
+acc:(74.0+74.5+74.4+74.7+74.8)/5 = 74.48
+
+
+dibert
+acc:(76.2+76.8+76.7+77.2+76.9)/5 = 76.76
