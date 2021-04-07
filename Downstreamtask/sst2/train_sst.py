@@ -138,7 +138,7 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
 
         if(trial is None and best_params is not None):
             print('-saving model-')
-            torch.save(model, 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_'+str(1)+'_epoch_'+str(epoch+1)+'.tar')
+            torch.save(model, 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_'+str(4)+'_epoch_'+str(epoch+1)+'.tar')
 
     return valid_acc, score # tuning according to the last best validation accuracy
     #return sum(score.valid_acc)/len(score.valid_acc), score

@@ -36,7 +36,7 @@ def testing(test_iter, model):
 
 def main():
 
-    model_path = 'results/full_text/seed_4/dibert_SNLI_mlm_cls_pprediction_103_10_seed_4_epoch_8.tar'
+    model_path = 'results/full_text_with_full_grid_search/dibert_SNLI_mlm_cls_pprediction_103_10_seed_0_epoch_14.tar'
     test_data = SNLIData('test')
     print(len(test_data))
     snliTail_bert = torch.load(model_path)

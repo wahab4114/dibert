@@ -20,8 +20,8 @@ bert-base (test_f1) = 0.80235589195
 dibert (test_f1) = 0.80980975011
 
 sst2
-bert-base (test_accuracy) = 0.82097748489
-dibert    (test_acciracy) = 0.82701812191
+bert-base (test_accuracy) = 86.12
+dibert    (test_acciracy) = 86.26
 
 LIAR (6classes: pants-fire, false, barely-true, half-true, true)
 bert-base (test_accuracy) = 0.27716289945

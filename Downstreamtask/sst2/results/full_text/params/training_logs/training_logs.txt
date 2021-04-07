@@ -2,3 +2,28 @@ results/full_text/dibert_mlm_cls_103_10_seed_0_epoch_12.tar
 acc: 85.8
 results/full_text/dibert_mlm_cls_pprediction_103_10_seed_0_epoch_13.tar
 acc: 86.1
+
+results/full_text/dibert_mlm_cls_103_10_seed_1_epoch_6.tar
+acc: 86.5
+results/full_text/dibert_mlm_cls_pprediction_103_10_seed_1_epoch_14.tar
+acc: 86.5
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_2_epoch_6.tar
+86.4
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_2_epoch_8.tar
+86.7
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_3_epoch_9.tar
+85.9
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_3_epoch_13.tar
+85.9
+
+results/full_text/dibert_mlm_cls_full_text_103_10_seed_4_epoch_5.tar
+86.0
+results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_4_epoch_9.tar
+86.1
+
+bert-base-acc:
+(85.8+86.5+86.4+85.9+86.0)/5 = 86.12
+dibert-acc:
+(86.1+86.5+86.7+85.9+86.1)/5 = 86.26

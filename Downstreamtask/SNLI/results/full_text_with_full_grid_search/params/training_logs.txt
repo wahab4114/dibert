@@ -1,0 +1,3 @@
+results/full_text_with_full_grid_search/dibert_SNLI_mlm_cls_103_10_seed_0_epoch_14.tar
+test_accuracy: 0.8251221498371335
+test_weighted_f1: 0.8252554255081225

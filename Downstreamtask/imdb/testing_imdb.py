@@ -34,7 +34,7 @@ def testing(test_iter, model):
 
 
 def main():
-    model_path = 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_4_epoch_1.tar'
+    model_path = 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_4_epoch_5.tar'
 
     path = 'data/IMDB_datav2.csv'
     train_data_split, valid_data_split, test_data_split = IMDBdataset.get_data_splits(path)

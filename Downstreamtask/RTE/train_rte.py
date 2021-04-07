@@ -1,6 +1,6 @@
 from optuna.samplers import TPESampler, GridSampler
 
-from Downstreamtask.SNLI.snliconfig import snliConfig
+from Downstreamtask.RTE.rtemodel import rteConfig
 import numpy as np
 import torch.nn as nn
 import torch
@@ -8,13 +8,13 @@ import time
 import torch.optim as optim
 from utils import *
 from transformers import BertTokenizer, BertModel, AdamW, get_linear_schedule_with_warmup
-from Downstreamtask.SNLI.snlimodel import Bert_snli
+from Downstreamtask.RTE.rtemodel import Bert_rte
 import tqdm
 import random
 import optuna
 
 from torch.utils.data import Dataset, DataLoader
-from Downstreamtask.SNLI.snlidataset import SNLIData
+from Downstreamtask.RTE.rtedataset import RTEdataset
 
 def training(model, optim, criterion_cls, train_iter, epoch):
 
@@ -34,7 +34,7 @@ def training(model, optim, criterion_cls, train_iter, epoch):
         logits_cls = model(input_ids, attn_mask, token_type_ids)
         ## if out dim is (bs x seqlen x numclass) -> (total_words_batch x numclass)
         ## if true label is (bs x seqlen) -> (total_words_batch)
-        loss_cls = criterion_cls (logits_cls.view(-1, 3), truelabel_cls.view(-1, ))
+        loss_cls = criterion_cls (logits_cls.view(-1, 2), truelabel_cls.view(-1, ))
         loss = loss_cls
         losses.append(loss.item())
         #for now we are only interested in accuracy and f1 of the classification task
@@ -65,7 +65,7 @@ def validation(model, criterion_cls, valid_iter, epoch):
 
             logits_cls = model(input_ids, attn_mask, token_type_ids)
 
-            loss_cls = criterion_cls(logits_cls.view(-1, 3), truelabel_cls.view(-1, ))
+            loss_cls = criterion_cls(logits_cls.view(-1, 2), truelabel_cls.view(-1, ))
             loss = loss_cls
             losses.append(loss.item())
             # for now we are only interested in accuracy and f1 of the classification task
@@ -77,7 +77,7 @@ def validation(model, criterion_cls, valid_iter, epoch):
 
 def train_val(train_data, valid_data, model_path:str,trial=None, best_params=None):
 
-    epochs = snliConfig.epochs
+    epochs = rteConfig.epochs
     if (best_params is not None):
         print('selecting best_params')
         lrmain = best_params['lrmain']
@@ -91,15 +91,15 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
         drop_out = trial.suggest_categorical('drop_out', [0.0, 0.1, 0.2, 0.3])
     else:
 
-        drop_out = snliConfig.drop_out
+        drop_out = rteConfig.drop_out
 
     train_iter = train_data
     valid_iter = valid_data
     path_1 = '../../results/model/wiki103_mlm_cls_full_epochs10/dibert_mlm_cls_103_full_text9.tar'
     path_2 = '../../results/model/wiki103_mlm_cls_pprediction_full_epochs10/dibert_mlm_cls_pprediction_103_full_text9.tar'
 
-    bert_pretrained = torch.load(path_2)
-    model = Bert_snli(pretrained_model= bert_pretrained, hidden_out=snliConfig.hidden_model_out, drop_out= drop_out)
+    bert_pretrained = torch.load(path_1)
+    model = Bert_rte(pretrained_model= bert_pretrained, hidden_out=rteConfig.hidden_model_out, drop_out= drop_out)
 
 
     optimizer = AdamW(model.parameters(), lr=lrmain)
@@ -130,7 +130,7 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
 
         if(trial is None and best_params is not None):
             print('-saving model-')
-            torch.save(model, 'results/full_text_with_full_grid_search/dibert_SNLI_mlm_cls_pprediction_103_10_seed_'+str(0)+'_epoch_'+str(epoch+1)+'.tar')
+            torch.save(model, 'results/full_text/dibert_RTE_mlm_cls_103_10_seed_'+str(0)+'_epoch_'+str(epoch+1)+'.tar')
 
     return valid_acc, score # tuning according to the last best validation accuracy
     #return sum(score.valid_acc)/len(score.valid_acc), score
@@ -151,6 +151,7 @@ def start_tuning(train_data, valid_data, model_path:str ,param_path:str, sampler
         print('selecting grid search sampler')
         #search_space = {"lrmain": [5e-5, 3e-5, 2e-5], "drop_out": [0.1]}
         search_space = {"lrmain": [5e-5, 4e-5, 3e-5, 2e-5], "drop_out": [0.0, 0.1, 0.2, 0.3]}
+        #search_space = {"lrmain": [4e-5], "drop_out": [0.2]}
         study = optuna.create_study(direction="maximize", sampler=GridSampler(search_space))
         study.optimize(lambda trial:objective(train_data, valid_data, model_path, trial), n_trials=4 * 4 )
     elif(sampler == 'Grid_with_two_lr'):
@@ -164,30 +165,32 @@ def start_tuning(train_data, valid_data, model_path:str ,param_path:str, sampler
     return best_params, study.best_trial
 
 if __name__ == '__main__':
-    param_path = 'results/full_text_with_full_grid_search/params/dibert_SNLI_mlm_cls_pprediction_10_best.json'
-    model_path = 'results/dibert_SNLI_mlm_cls_pp_29_seed_'+str(1)+'.tar'
+    param_path = 'results/full_text/params/dibert_RTE_mlm_cls_10_best.json'
+    model_path = 'results/dibert_RTE_mlm_cls_pp_29_seed_'+str(0)+'.tar'
 
-    is_tune = False
+    is_tune = True
 
 
     device = torch.device("cuda:0")
 
-    train_data = SNLIData('train')
-    valid_data = SNLIData('validation')
-    test_data = SNLIData('test')
+
+    train_data = RTEdataset('train')
+    valid_data = RTEdataset('validation')
+    test_data = RTEdataset('test')
 
     print(len(train_data))
     print(len(valid_data))
 
-    train_data_loader = DataLoader(train_data, batch_size=snliConfig.batch_size)
-    valid_data_loader = DataLoader(valid_data, batch_size=snliConfig.batch_size)
+
+    train_data_loader = DataLoader(train_data, batch_size=rteConfig.batch_size)
+    valid_data_loader = DataLoader(valid_data, batch_size=rteConfig.batch_size)
 
     if(is_tune == False):
         best_params = load_json(param_path)
         #best_params = {"lrmain": 4e-05, "drop_out": 0.0}
         print(best_params)
         _, score = train_val(train_data_loader, valid_data_loader, model_path, None, best_params)
-        print_result(score, snliConfig.epochs)
+        print_result(score, rteConfig.epochs)
     elif(is_tune == True):
         print(param_path)
         #train_val(train_data, valid_data, model_path=model_path)
