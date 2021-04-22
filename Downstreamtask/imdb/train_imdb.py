@@ -96,7 +96,7 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
     path_1 = '../../results/model/wiki103_mlm_cls_full_epochs10/dibert_mlm_cls_103_full_text9.tar'
     path_2 = '../../results/model/wiki103_mlm_cls_pprediction_full_epochs10/dibert_mlm_cls_pprediction_103_full_text9.tar'
 
-    bert_pretrained = torch.load(path_2)
+    bert_pretrained = torch.load(path_1)
     model = Bert_imdb(pretrained_model= bert_pretrained, hidden_out=imdbConfig.hidden_model_out, drop_out= drop_out)
 
 
@@ -128,7 +128,7 @@ def train_val(train_data, valid_data, model_path:str,trial=None, best_params=Non
 
         if(trial is None and best_params is not None):
             print('-saving model-')
-            torch.save(model, 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_'+str(4)+'_epoch_'+str(epoch+1)+'.tar')
+            #torch.save(model, 'results/full_text/dibert_mlm_cls_pprediction_full_text_103_10_seed_'+str(4)+'_epoch_'+str(epoch+1)+'.tar')
 
     return valid_acc, score # tuning according to the last best validation accuracy
     #return sum(score.valid_acc)/len(score.valid_acc), score
@@ -163,7 +163,7 @@ def start_tuning(train_data, valid_data, model_path:str ,param_path:str, sampler
     return best_params, study.best_trial
 
 if __name__ == '__main__':
-    param_path = 'results/full_text/params/dibert_mlm_cls_pprediction_full_text.json'
+    param_path = 'results/full_text/params/dibert_mlm_cls_full_text.json'
     model_path = 'results/dibert_imdb_mlm_cls_pp_29_seed_'+str(0)+'.tar'
 
     is_tune = False
@@ -192,6 +192,7 @@ if __name__ == '__main__':
         print(best_params)
         _, score = train_val(train_data_loader, valid_data_loader, model_path, None, best_params)
         print_result(score, imdbConfig.epochs)
+        print(score.valid_f1)
     elif(is_tune == True):
         print(param_path)
         #train_val(train_data, valid_data, model_path=model_path)
