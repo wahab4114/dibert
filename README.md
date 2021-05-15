@@ -14,3 +14,7 @@ performance of the model. Results show that DIBERT outperforms BERT model.
   * dibert/Downstreamtask/results.txt contains the result on every task
 * dibert.yml file can be used for installing the dependencies needed to run the code
 * utils.py contains the helper functions
+
+WikiText-103 dataset can be downloaded on this site:
+https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/
+and exact downloadable link is here: https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-v1.zip
