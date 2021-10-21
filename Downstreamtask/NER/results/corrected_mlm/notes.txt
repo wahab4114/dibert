@@ -1,2 +1,0 @@
-this contains a dibert model which predicts parent of a words instead of parent index
-of a word as a third objective (named pprediction) in dibert model
